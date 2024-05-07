@@ -6,12 +6,12 @@
 #include "S_GhostInfo.generated.h"
 
 USTRUCT(BlueprintType)
-struct BIGGESTONE3_API FS_GhostInfo : public FTableRowBase
+struct BIGGESTONE3_API FS_GhostInfoCpp : public FTableRowBase
 {
 	GENERATED_BODY();
 public:
-	FS_GhostInfo();
-	~FS_GhostInfo();
+	FS_GhostInfoCpp();
+	~FS_GhostInfoCpp();
 
 	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 	FText Name;

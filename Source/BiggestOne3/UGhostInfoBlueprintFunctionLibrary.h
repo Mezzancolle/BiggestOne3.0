@@ -18,5 +18,5 @@ class BIGGESTONE3_API UGhostInfoBlueprintFunctionLibrary : public UBlueprintFunc
 public:
 
 	UFUNCTION(BlueprintCallable)
-	static void SetNameToGhostInfo(const FS_GhostInfo& InGhostInfo, const FText& InName);
+	static void SetNameToGhostInfo(const FS_GhostInfoCpp& InGhostInfo, const FText& InName);
 };

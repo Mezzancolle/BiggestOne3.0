@@ -3,10 +3,10 @@
 
 #include "S_GhostInfo.h"
 
-FS_GhostInfo::FS_GhostInfo()
+FS_GhostInfoCpp::FS_GhostInfoCpp()
 {
 }
 
-FS_GhostInfo::~FS_GhostInfo()
+FS_GhostInfoCpp::~FS_GhostInfoCpp()
 {
 }

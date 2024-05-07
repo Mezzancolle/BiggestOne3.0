@@ -3,7 +3,7 @@
 
 #include "UGhostInfoBlueprintFunctionLibrary.h"
 
-void UGhostInfoBlueprintFunctionLibrary::SetNameToGhostInfo(const FS_GhostInfo& InGhostInfo, const FText& InName)
+void UGhostInfoBlueprintFunctionLibrary::SetNameToGhostInfo(const FS_GhostInfoCpp& InGhostInfo, const FText& InName)
 {
 	//InGhostInfo.Name = InName;
 }
