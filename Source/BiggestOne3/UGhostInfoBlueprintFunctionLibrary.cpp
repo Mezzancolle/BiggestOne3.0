@@ -7,3 +7,8 @@ void UGhostInfoBlueprintFunctionLibrary::SetNameToGhostInfo(const FS_GhostInfoCp
 {
 	//InGhostInfo.Name = InName;
 }
+
+bool UGhostInfoBlueprintFunctionLibrary::Exec(UWorld* InWorld, const TCHAR* Cmd, FOutputDevice& Ar)
+{
+	return false;
+}

@@ -11,7 +11,7 @@
  * 
  */
 UCLASS()
-class BIGGESTONE3_API UGhostInfoBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
+class BIGGESTONE3_API UGhostInfoBlueprintFunctionLibrary : public UBlueprintFunctionLibrary, public FSelfRegisteringExec
 {
 	GENERATED_BODY()
 	
@@ -19,4 +19,6 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	static void SetNameToGhostInfo(const FS_GhostInfoCpp& InGhostInfo, const FText& InName);
+
+	virtual bool Exec(UWorld* InWorld, const TCHAR* Cmd, FOutputDevice& Ar) override;
 };
