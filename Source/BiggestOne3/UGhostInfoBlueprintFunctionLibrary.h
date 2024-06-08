@@ -20,5 +20,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	static void SetNameToGhostInfo(const FS_GhostInfoCpp& InGhostInfo, const FText& InName);
 
+	UFUNCTION(BlueprintCallable)
+	static void SetInspectingPPValues(FPostProcessSettings& InPostProcessSettings);
+
 	virtual bool Exec(UWorld* InWorld, const TCHAR* Cmd, FOutputDevice& Ar) override;
 };

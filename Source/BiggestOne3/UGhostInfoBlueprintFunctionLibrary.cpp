@@ -10,6 +10,11 @@ void UGhostInfoBlueprintFunctionLibrary::SetNameToGhostInfo(const FS_GhostInfoCp
 	//InGhostInfo.Name = InName;
 }
 
+void UGhostInfoBlueprintFunctionLibrary::SetInspectingPPValues(FPostProcessSettings& InPostProcessSettings)
+{
+	//InPostProcessSettings->depthof
+}
+
 bool UGhostInfoBlueprintFunctionLibrary::Exec(UWorld* InWorld, const TCHAR* Cmd, FOutputDevice& Ar)
 {
 	if (FParse::Command(&Cmd, TEXT("DeleteSave")))
