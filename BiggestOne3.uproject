@@ -3,13 +3,7 @@
 	"EngineAssociation": "5.5",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "BiggestOne3",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
+	"Modules": [],
 	"Plugins": [
 		{
 			"Name": "Water",
