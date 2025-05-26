@@ -3,7 +3,6 @@
 	"EngineAssociation": "5.5",
 	"Category": "",
 	"Description": "",
-	"Modules": [],
 	"Plugins": [
 		{
 			"Name": "Water",
@@ -11,6 +10,10 @@
 		},
 		{
 			"Name": "HDRIBackdrop",
+			"Enabled": true
+		},
+		{
+			"Name": "OneClickControlRig",
 			"Enabled": true
 		}
 	],
