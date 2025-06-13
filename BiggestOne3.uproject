@@ -5,6 +5,14 @@
 	"Description": "",
 	"Plugins": [
 		{
+			"Name": "Water",
+			"Enabled": true
+		},
+		{
+			"Name": "HDRIBackdrop",
+			"Enabled": true
+		},
+		{
 			"Name": "OneClickControlRig",
 			"Enabled": true
 		}

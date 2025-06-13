@@ -74,3 +74,7 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Content/StarterContent/Architecture/Floor_400x400.uasset
+Content/StarterContent/Maps/Advanced_Lighting.umap
+Content/StarterContent/Maps/Minimal_Default.umap
+Content/StarterContent/Maps/StarterMap.umap
