@@ -74,4 +74,8 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Remove Starter Content from being pushed everytime
+Content/StarterContent/
 Content/StarterContent/*
+Content/StarterContent/**
