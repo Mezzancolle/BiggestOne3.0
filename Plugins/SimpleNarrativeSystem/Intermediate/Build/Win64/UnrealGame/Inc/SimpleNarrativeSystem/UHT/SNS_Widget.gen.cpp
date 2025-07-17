@@ -275,7 +275,7 @@ struct Z_Construct_UClass_USNS_Widget_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USNS_Widget_Statics::NewProp_SettingsData = { "SettingsData", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_Widget, SettingsData), Z_Construct_UScriptStruct_FSNS_S_SettingsData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsData_MetaData), NewProp_SettingsData_MetaData) }; // 2171560985
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USNS_Widget_Statics::NewProp_SettingsData = { "SettingsData", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_Widget, SettingsData), Z_Construct_UScriptStruct_FSNS_S_SettingsData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsData_MetaData), NewProp_SettingsData_MetaData) }; // 2405993802
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USNS_Widget_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_Widget_Statics::NewProp_SettingsData,
 };
@@ -318,14 +318,14 @@ USNS_Widget::~USNS_Widget() {}
 // End Class USNS_Widget
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USNS_Widget, USNS_Widget::StaticClass, TEXT("USNS_Widget"), &Z_Registration_Info_UClass_USNS_Widget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_Widget), 1116428922U) },
+		{ Z_Construct_UClass_USNS_Widget, USNS_Widget::StaticClass, TEXT("USNS_Widget"), &Z_Registration_Info_UClass_USNS_Widget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_Widget), 192946488U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_3636574519(TEXT("/Script/SimpleNarrativeSystem"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_3392291098(TEXT("/Script/SimpleNarrativeSystem"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

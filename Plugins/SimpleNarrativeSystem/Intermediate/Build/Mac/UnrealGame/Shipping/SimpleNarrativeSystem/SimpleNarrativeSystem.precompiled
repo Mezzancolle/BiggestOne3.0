@@ -1,8 +1,0 @@
-{
-	"OutputFiles": [
-		"../../../arm64/UnrealGame/Shipping/SimpleNarrativeSystem/Module.SimpleNarrativeSystem.cpp.o",
-		"../../../arm64/UnrealGame/Shipping/SimpleNarrativeSystem/Module.SimpleNarrativeSystem.cpp.o",
-		"../../../x64/UnrealGame/Shipping/SimpleNarrativeSystem/Module.SimpleNarrativeSystem.cpp.o",
-		"../../../x64/UnrealGame/Shipping/SimpleNarrativeSystem/Module.SimpleNarrativeSystem.cpp.o"
-	]
-}

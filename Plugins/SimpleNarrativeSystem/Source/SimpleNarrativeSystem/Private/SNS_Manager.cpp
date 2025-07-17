@@ -17,7 +17,7 @@ ASNS_Manager::ASNS_Manager()
 	AudioComponent = CreateDefaultSubobject<UAudioComponent>("SNS_AudioComponent");
 
 	RootComponent = AudioComponent;
-	AudioComponent->bIsUISound = true;
+	AudioComponent->bIsUISound = false;
 
 }
 
@@ -28,6 +28,13 @@ void ASNS_Manager::BeginPlay()
 	
 	FSoftClassPath MyWidgetClassRef(GET_SETTINGS->DialogueWidgetBlueprint);
 	TSubclassOf<USNS_Widget> SubtitlesWidgetClass = MyWidgetClassRef.TryLoadClass<USNS_Widget>();
+
+	const TSoftObjectPtr<USoundClass>& DialoguesSoundClass = GET_SETTINGS->DialoguesSoundClass;
+
+	if (!DialoguesSoundClass.IsNull())
+	{
+		AudioComponent->SoundClassOverride = DialoguesSoundClass.LoadSynchronous();
+	}
 
 	if (MyWidgetClassRef.IsNull() || SubtitlesWidgetClass == nullptr)
 	{

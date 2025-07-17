@@ -1,13 +1,13 @@
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_CustomProjectSettings.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_DataTableRowHandle.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_Manager.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_DialogueWorldSubsystem.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_NarrativeBlueprintFuncLib.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SettingsGameInstanceSS.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SpeakersDataTable.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SettingsSaveGame.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_Widget.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_Dialogue.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_SettingsData.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_Speaker.h
-D:\build\U5M-Marketplace\Sync\LocalBuilds\PluginTemp\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_TimeStamp.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_DataTableRowHandle.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_CustomProjectSettings.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_DialogueWorldSubsystem.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_NarrativeBlueprintFuncLib.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_Speaker.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_SettingsData.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_Manager.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_Dialogue.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SettingsGameInstanceSS.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SpeakersDataTable.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_Widget.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_TimeStamp.h
+C:\Projects\Unreal\Build Plugin\SimpleNarrativeSystem\HostProject\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SettingsSaveGame.h
