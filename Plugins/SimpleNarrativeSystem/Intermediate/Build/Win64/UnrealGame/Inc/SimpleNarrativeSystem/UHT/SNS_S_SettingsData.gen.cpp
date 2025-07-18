@@ -34,51 +34,81 @@ struct Z_Construct_UScriptStruct_FSNS_S_SettingsData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSubtitlesEnabled_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Should show subtitles? */" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should show subtitles?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSpeakerNameEnabled_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Should show who is speaking? */" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should show who is speaking?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SubtitlesSize_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Text size */" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Text size" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SubtitlesBackgroundColor_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Color of widget background with alpha */" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Color of widget background with alpha" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SubtitlesTextColor_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Color of dialogue text */" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Color of dialogue text" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSecondTextEnabled_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Should have a second/fade out text? */" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should have a second/fade out text?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bFadeOutEnabled_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Should fade out texts? */" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_SettingsData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should fade out texts?" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bSubtitlesEnabled_SetBit(void* Obj);
@@ -156,15 +186,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FSNS_S_SettingsData()
 // End ScriptStruct FSNS_S_SettingsData
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSNS_S_SettingsData::StaticStruct, Z_Construct_UScriptStruct_FSNS_S_SettingsData_Statics::NewStructOps, TEXT("SNS_S_SettingsData"), &Z_Registration_Info_UScriptStruct_SNS_S_SettingsData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSNS_S_SettingsData), 2405993802U) },
+		{ FSNS_S_SettingsData::StaticStruct, Z_Construct_UScriptStruct_FSNS_S_SettingsData_Statics::NewStructOps, TEXT("SNS_S_SettingsData"), &Z_Registration_Info_UScriptStruct_SNS_S_SettingsData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSNS_S_SettingsData), 402575282U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_178202263(TEXT("/Script/SimpleNarrativeSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_2569176675(TEXT("/Script/SimpleNarrativeSystem"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_SettingsData_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -46,6 +46,10 @@ struct Z_Construct_UClass_USNS_CustomProjectSettings_Statics
 		{ "Category", "Settings" },
 		{ "ModuleRelativePath", "Public/SNS_CustomProjectSettings.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WidgetZOrder_MetaData[] = {
+		{ "Category", "Settings" },
+		{ "ModuleRelativePath", "Public/SNS_CustomProjectSettings.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShouldWarningOnNullOrNoneDialogueRowName_MetaData[] = {
 		{ "Category", "Settings" },
 		{ "DisplayName", "Should warn when row name is null or none?" },
@@ -59,6 +63,7 @@ struct Z_Construct_UClass_USNS_CustomProjectSettings_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_DialogueWidgetBlueprint;
 	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_DialoguesSoundClass;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_WidgetZOrder;
 	static void NewProp_bShouldWarningOnNullOrNoneDialogueRowName_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bShouldWarningOnNullOrNoneDialogueRowName;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_PluginInfo;
@@ -71,6 +76,7 @@ struct Z_Construct_UClass_USNS_CustomProjectSettings_Statics
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_DialogueWidgetBlueprint = { "DialogueWidgetBlueprint", nullptr, (EPropertyFlags)0x0014000000004005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_CustomProjectSettings, DialogueWidgetBlueprint), Z_Construct_UClass_UClass, Z_Construct_UClass_USNS_Widget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueWidgetBlueprint_MetaData), NewProp_DialogueWidgetBlueprint_MetaData) };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_DialoguesSoundClass = { "DialoguesSoundClass", nullptr, (EPropertyFlags)0x0014000000004005, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_CustomProjectSettings, DialoguesSoundClass), Z_Construct_UClass_USoundClass_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialoguesSoundClass_MetaData), NewProp_DialoguesSoundClass_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_WidgetZOrder = { "WidgetZOrder", nullptr, (EPropertyFlags)0x0010000000004001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_CustomProjectSettings, WidgetZOrder), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetZOrder_MetaData), NewProp_WidgetZOrder_MetaData) };
 void Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_bShouldWarningOnNullOrNoneDialogueRowName_SetBit(void* Obj)
 {
 	((USNS_CustomProjectSettings*)Obj)->bShouldWarningOnNullOrNoneDialogueRowName = 1;
@@ -80,6 +86,7 @@ const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_USNS_CustomProjec
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USNS_CustomProjectSettings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_DialogueWidgetBlueprint,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_DialoguesSoundClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_WidgetZOrder,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_bShouldWarningOnNullOrNoneDialogueRowName,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_CustomProjectSettings_Statics::NewProp_PluginInfo,
 };
@@ -124,10 +131,10 @@ USNS_CustomProjectSettings::~USNS_CustomProjectSettings() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USNS_CustomProjectSettings, USNS_CustomProjectSettings::StaticClass, TEXT("USNS_CustomProjectSettings"), &Z_Registration_Info_UClass_USNS_CustomProjectSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_CustomProjectSettings), 3746490704U) },
+		{ Z_Construct_UClass_USNS_CustomProjectSettings, USNS_CustomProjectSettings::StaticClass, TEXT("USNS_CustomProjectSettings"), &Z_Registration_Info_UClass_USNS_CustomProjectSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_CustomProjectSettings), 1370669120U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_1203251766(TEXT("/Script/SimpleNarrativeSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_1605982157(TEXT("/Script/SimpleNarrativeSystem"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

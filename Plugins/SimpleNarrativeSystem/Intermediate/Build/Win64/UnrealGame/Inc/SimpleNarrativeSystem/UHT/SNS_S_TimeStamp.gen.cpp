@@ -35,7 +35,9 @@ struct Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_TimeStamp.h" },
 	};
@@ -50,9 +52,13 @@ struct Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeStamp_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// default value for a single line dialogue TODO: every time you add a new entry in a data table increase this number by the previous\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Structs/SNS_S_TimeStamp.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "default value for a single line dialogue TODO: every time you add a new entry in a data table increase this number by the previous" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SubtitleText_MetaData[] = {
 		{ "Category", "SimpleNarrativeSystem" },
@@ -70,7 +76,7 @@ struct Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSNS_S_TimeStamp, Speaker), Z_Construct_UScriptStruct_FSNS_DataTableRowHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 3140285520
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSNS_S_TimeStamp, Speaker), Z_Construct_UScriptStruct_FSNS_DataTableRowHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 2601367340
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics::NewProp_SpeakerTopPadding = { "SpeakerTopPadding", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSNS_S_TimeStamp, SpeakerTopPadding), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpeakerTopPadding_MetaData), NewProp_SpeakerTopPadding_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics::NewProp_TimeStamp = { "TimeStamp", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSNS_S_TimeStamp, TimeStamp), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeStamp_MetaData), NewProp_TimeStamp_MetaData) };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics::NewProp_SubtitleText = { "SubtitleText", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSNS_S_TimeStamp, SubtitleText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SubtitleText_MetaData), NewProp_SubtitleText_MetaData) };
@@ -105,15 +111,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FSNS_S_TimeStamp()
 // End ScriptStruct FSNS_S_TimeStamp
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSNS_S_TimeStamp::StaticStruct, Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics::NewStructOps, TEXT("SNS_S_TimeStamp"), &Z_Registration_Info_UScriptStruct_SNS_S_TimeStamp, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSNS_S_TimeStamp), 916740343U) },
+		{ FSNS_S_TimeStamp::StaticStruct, Z_Construct_UScriptStruct_FSNS_S_TimeStamp_Statics::NewStructOps, TEXT("SNS_S_TimeStamp"), &Z_Registration_Info_UScriptStruct_SNS_S_TimeStamp, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSNS_S_TimeStamp), 1242887064U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_2059406077(TEXT("/Script/SimpleNarrativeSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_895999541(TEXT("/Script/SimpleNarrativeSystem"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_TimeStamp_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
