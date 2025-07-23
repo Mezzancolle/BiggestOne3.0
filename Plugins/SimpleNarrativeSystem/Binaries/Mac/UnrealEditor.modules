@@ -1,8 +1,0 @@
-{
-	"BuildId": "37670630",
-	"Modules": 
-	{
-		"SimpleNarrativeSystem": "UnrealEditor-SimpleNarrativeSystem.dylib",
-		"SimpleNarrativeSystemEditor": "UnrealEditor-SimpleNarrativeSystemEditor.dylib"
-	}
-}

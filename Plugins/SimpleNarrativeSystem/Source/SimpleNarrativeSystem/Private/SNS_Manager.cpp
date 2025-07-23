@@ -17,7 +17,7 @@ ASNS_Manager::ASNS_Manager()
 	AudioComponent = CreateDefaultSubobject<UAudioComponent>("SNS_AudioComponent");
 
 	RootComponent = AudioComponent;
-	AudioComponent->bIsUISound = true;
+	AudioComponent->bIsUISound = false;
 
 }
 
@@ -29,6 +29,13 @@ void ASNS_Manager::BeginPlay()
 	FSoftClassPath MyWidgetClassRef(GET_SETTINGS->DialogueWidgetBlueprint);
 	TSubclassOf<USNS_Widget> SubtitlesWidgetClass = MyWidgetClassRef.TryLoadClass<USNS_Widget>();
 
+	const TSoftObjectPtr<USoundClass>& DialoguesSoundClass = GET_SETTINGS->DialoguesSoundClass;
+
+	if (!DialoguesSoundClass.IsNull())
+	{
+		AudioComponent->SoundClassOverride = DialoguesSoundClass.LoadSynchronous();
+	}
+
 	if (MyWidgetClassRef.IsNull() || SubtitlesWidgetClass == nullptr)
 	{
 		FMessageLog("PIE").Error(FText::FromString(TEXT("Can't find a Subtitle Widget, please set it inside 'Project Settings/Plugins/Simple Narrative System/Subtitles Widget'.")));
@@ -37,7 +44,7 @@ void ASNS_Manager::BeginPlay()
 	}
 
 	SubtitlesWidget = Cast<USNS_Widget>(CreateWidget(GetWorld()->GetFirstPlayerController(), SubtitlesWidgetClass));
-	SubtitlesWidget->AddToViewport(612);
+	SubtitlesWidget->AddToViewport(GET_SETTINGS->WidgetZOrder);
 
 }
 
