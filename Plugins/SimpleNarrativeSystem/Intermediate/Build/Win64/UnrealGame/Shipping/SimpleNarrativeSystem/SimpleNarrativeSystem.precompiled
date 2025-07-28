@@ -1,0 +1,16 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\Module.SimpleNarrativeSystem.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SimpleNarrativeSystem.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_CustomProjectSettings.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_DataTableRowHandle.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_DialogueWorldSubsystem.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_Manager.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_NarrativeBlueprintFuncLib.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_SettingsGameInstanceSS.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_SettingsSaveGame.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_SpeakersDataTable.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_Widget.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\SimpleNarrativeSystem\\SNS_S_Dialogue.cpp.obj"
+	]
+}
