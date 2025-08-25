@@ -15,6 +15,14 @@
 		{
 			"Name": "NiagaraFluids",
 			"Enabled": true
+		},
+		{
+			"Name": "OneClickControlRig",
+			"Enabled": true
+		},
+		{
+			"Name": "SimpleNarrativeSystem",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
