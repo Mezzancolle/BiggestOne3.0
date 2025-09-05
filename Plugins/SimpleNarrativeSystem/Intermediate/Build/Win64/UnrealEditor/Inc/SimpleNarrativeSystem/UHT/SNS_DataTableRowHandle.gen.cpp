@@ -35,7 +35,9 @@ struct Z_Construct_UScriptStruct_FSNS_DataTableRowHandle_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "ModuleRelativePath", "Public/SNS_DataTableRowHandle.h" },
 	};
 #endif // WITH_METADATA
@@ -69,15 +71,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FSNS_DataTableRowHandle()
 // End ScriptStruct FSNS_DataTableRowHandle
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_Statics
+struct Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSNS_DataTableRowHandle::StaticStruct, Z_Construct_UScriptStruct_FSNS_DataTableRowHandle_Statics::NewStructOps, TEXT("SNS_DataTableRowHandle"), &Z_Registration_Info_UScriptStruct_SNS_DataTableRowHandle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSNS_DataTableRowHandle), 3140285520U) },
+		{ FSNS_DataTableRowHandle::StaticStruct, Z_Construct_UScriptStruct_FSNS_DataTableRowHandle_Statics::NewStructOps, TEXT("SNS_DataTableRowHandle"), &Z_Registration_Info_UScriptStruct_SNS_DataTableRowHandle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSNS_DataTableRowHandle), 2601367340U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_3100014494(TEXT("/Script/SimpleNarrativeSystem"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_2440871644(TEXT("/Script/SimpleNarrativeSystem"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_DataTableRowHandle_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
