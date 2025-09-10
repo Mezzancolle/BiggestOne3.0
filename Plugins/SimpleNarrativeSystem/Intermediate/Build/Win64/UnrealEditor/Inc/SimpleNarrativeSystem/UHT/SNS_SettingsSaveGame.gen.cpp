@@ -31,7 +31,9 @@ struct Z_Construct_UClass_USNS_SettingsSaveGame_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "SNS_SettingsSaveGame.h" },
 		{ "ModuleRelativePath", "Public/SNS_SettingsSaveGame.h" },
 	};
@@ -48,7 +50,7 @@ struct Z_Construct_UClass_USNS_SettingsSaveGame_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USNS_SettingsSaveGame_Statics::NewProp_SettingsData = { "SettingsData", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_SettingsSaveGame, SettingsData), Z_Construct_UScriptStruct_FSNS_S_SettingsData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsData_MetaData), NewProp_SettingsData_MetaData) }; // 2405993802
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USNS_SettingsSaveGame_Statics::NewProp_SettingsData = { "SettingsData", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_SettingsSaveGame, SettingsData), Z_Construct_UScriptStruct_FSNS_S_SettingsData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsData_MetaData), NewProp_SettingsData_MetaData) }; // 402575282
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USNS_SettingsSaveGame_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_SettingsSaveGame_Statics::NewProp_SettingsData,
 };
@@ -91,14 +93,14 @@ USNS_SettingsSaveGame::~USNS_SettingsSaveGame() {}
 // End Class USNS_SettingsSaveGame
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_Statics
+struct Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USNS_SettingsSaveGame, USNS_SettingsSaveGame::StaticClass, TEXT("USNS_SettingsSaveGame"), &Z_Registration_Info_UClass_USNS_SettingsSaveGame, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_SettingsSaveGame), 1511788272U) },
+		{ Z_Construct_UClass_USNS_SettingsSaveGame, USNS_SettingsSaveGame::StaticClass, TEXT("USNS_SettingsSaveGame"), &Z_Registration_Info_UClass_USNS_SettingsSaveGame, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_SettingsSaveGame), 1287149602U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_2941094893(TEXT("/Script/SimpleNarrativeSystem"),
-	Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Build_Plugin_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_2058949484(TEXT("/Script/SimpleNarrativeSystem"),
+	Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SettingsSaveGame_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
