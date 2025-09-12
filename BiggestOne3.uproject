@@ -17,9 +17,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "MovieRenderPipeline",
-			"Enabled": true
-		},
 			"Name": "OneClickControlRig",
 			"Enabled": true
 		},
