@@ -598,9 +598,7 @@ struct Z_Construct_UClass_USNS_NarrativeBlueprintFuncLib_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
-#endif
 		{ "IncludePath", "SNS_NarrativeBlueprintFuncLib.h" },
 		{ "ModuleRelativePath", "Public/SNS_NarrativeBlueprintFuncLib.h" },
 	};
@@ -660,14 +658,14 @@ USNS_NarrativeBlueprintFuncLib::~USNS_NarrativeBlueprintFuncLib() {}
 // End Class USNS_NarrativeBlueprintFuncLib
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USNS_NarrativeBlueprintFuncLib, USNS_NarrativeBlueprintFuncLib::StaticClass, TEXT("USNS_NarrativeBlueprintFuncLib"), &Z_Registration_Info_UClass_USNS_NarrativeBlueprintFuncLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_NarrativeBlueprintFuncLib), 3895830742U) },
+		{ Z_Construct_UClass_USNS_NarrativeBlueprintFuncLib, USNS_NarrativeBlueprintFuncLib::StaticClass, TEXT("USNS_NarrativeBlueprintFuncLib"), &Z_Registration_Info_UClass_USNS_NarrativeBlueprintFuncLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_NarrativeBlueprintFuncLib), 2834657617U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_2391126907(TEXT("/Script/SimpleNarrativeSystem"),
-	Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WindowsProjects_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_3394701253(TEXT("/Script/SimpleNarrativeSystem"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_NarrativeBlueprintFuncLib_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

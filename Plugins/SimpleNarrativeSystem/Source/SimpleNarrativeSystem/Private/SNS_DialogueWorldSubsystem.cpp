@@ -422,7 +422,7 @@ void USNS_DialogueWorldSubsystem::ClearTMap()
 
 		for (size_t i = 0; i < Pair.Value.OnStart.Num(); i++)
 		{
-			Pair.Value.OnEnd[i].DelegateHandle.Reset();
+			Pair.Value.OnStart[i].DelegateHandle.Reset();
 		}
 
 		for (size_t i = 0; i < Pair.Value.OnIndex.Num(); i++)
