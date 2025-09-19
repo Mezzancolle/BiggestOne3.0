@@ -303,7 +303,15 @@ void USNS_DialogueWorldSubsystem::SendDialogueToWidget()
 	}
 #endif
 
-	DialogueLineRemaningTime += CurrentDialogue->TimeStamps[CurrentDialogueLineIndex].TimeStamp - DialogueLineElapsedTime;
+	if (CurrentDialogue->bIsTimePerDialogue)
+	{
+		DialogueLineRemaningTime += CurrentDialogue->TimeStamps[CurrentDialogueLineIndex].TimeStamp;
+	}
+	else
+	{
+		DialogueLineRemaningTime += CurrentDialogue->TimeStamps[CurrentDialogueLineIndex].TimeStamp - DialogueLineElapsedTime;
+	}
+
 
 	if (InGameManager->SubtitlesWidget)
 	{
