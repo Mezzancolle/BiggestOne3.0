@@ -32,7 +32,9 @@ struct Z_Construct_UClass_USNS_CustomProjectSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "SNS_CustomProjectSettings.h" },
 		{ "ModuleRelativePath", "Public/SNS_CustomProjectSettings.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
@@ -128,14 +130,14 @@ USNS_CustomProjectSettings::~USNS_CustomProjectSettings() {}
 // End Class USNS_CustomProjectSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USNS_CustomProjectSettings, USNS_CustomProjectSettings::StaticClass, TEXT("USNS_CustomProjectSettings"), &Z_Registration_Info_UClass_USNS_CustomProjectSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_CustomProjectSettings), 1370669120U) },
+		{ Z_Construct_UClass_USNS_CustomProjectSettings, USNS_CustomProjectSettings::StaticClass, TEXT("USNS_CustomProjectSettings"), &Z_Registration_Info_UClass_USNS_CustomProjectSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_CustomProjectSettings), 616583390U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_1605982157(TEXT("/Script/SimpleNarrativeSystem"),
-	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_2546767423(TEXT("/Script/SimpleNarrativeSystem"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_CustomProjectSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

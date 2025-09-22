@@ -30,7 +30,9 @@ struct Z_Construct_UClass_USNS_SpeakersDataTable_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "DataTable,ImportOptions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "SNS_SpeakersDataTable.h" },
 		{ "ModuleRelativePath", "Public/SNS_SpeakersDataTable.h" },
 	};
@@ -79,14 +81,14 @@ USNS_SpeakersDataTable::~USNS_SpeakersDataTable() {}
 // End Class USNS_SpeakersDataTable
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USNS_SpeakersDataTable, USNS_SpeakersDataTable::StaticClass, TEXT("USNS_SpeakersDataTable"), &Z_Registration_Info_UClass_USNS_SpeakersDataTable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_SpeakersDataTable), 1481712588U) },
+		{ Z_Construct_UClass_USNS_SpeakersDataTable, USNS_SpeakersDataTable::StaticClass, TEXT("USNS_SpeakersDataTable"), &Z_Registration_Info_UClass_USNS_SpeakersDataTable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_SpeakersDataTable), 404725653U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_822270972(TEXT("/Script/SimpleNarrativeSystem"),
-	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_55_SimpleNarrativeSystem_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_2636901490(TEXT("/Script/SimpleNarrativeSystem"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_SpeakersDataTable_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
