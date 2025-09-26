@@ -23,8 +23,8 @@ struct SIMPLENARRATIVESYSTEM_API FSNS_S_Dialogue : public FTableRowBase
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Meta = (RequiredAssetDataTags = "RowStructure=/Script/SimpleNarrativeSystem.SNS_S_Speaker"), Category = "SimpleNarrativeSystem")
 	TObjectPtr<UDataTable> SpeakersDataTable;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "CanBeSkipped?"), Category = "SimpleNarrativeSystem")
-	bool bCanBeSkipped = false;
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "IsTimePerDialogue?"), Category = "SimpleNarrativeSystem")
+	bool bCanBeSkipped = true;
+	UPROPERTY(BlueprintReadOnly, meta = (DisplayName = "IsTimePerDialogue?"), Category = "SimpleNarrativeSystem")
 	bool bIsTimePerDialogue = true;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "SimpleNarrativeSystem")

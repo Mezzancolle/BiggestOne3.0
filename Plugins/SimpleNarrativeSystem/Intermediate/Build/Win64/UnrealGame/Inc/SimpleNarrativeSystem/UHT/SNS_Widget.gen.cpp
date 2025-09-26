@@ -150,8 +150,8 @@ struct Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SNS_Widget_eventOnReceivedDialogue_Parms, Speaker), Z_Construct_UScriptStruct_FSNS_S_Speaker, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 3596523445
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue_Statics::NewProp_TimeStamp = { "TimeStamp", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SNS_Widget_eventOnReceivedDialogue_Parms, TimeStamp), Z_Construct_UScriptStruct_FSNS_S_TimeStamp, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeStamp_MetaData), NewProp_TimeStamp_MetaData) }; // 1242887064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SNS_Widget_eventOnReceivedDialogue_Parms, Speaker), Z_Construct_UScriptStruct_FSNS_S_Speaker, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 1541739054
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue_Statics::NewProp_TimeStamp = { "TimeStamp", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SNS_Widget_eventOnReceivedDialogue_Parms, TimeStamp), Z_Construct_UScriptStruct_FSNS_S_TimeStamp, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeStamp_MetaData), NewProp_TimeStamp_MetaData) }; // 916740343
 void Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue_Statics::NewProp_bCanBeSkipped_SetBit(void* Obj)
 {
 	((SNS_Widget_eventOnReceivedDialogue_Parms*)Obj)->bCanBeSkipped = 1;
@@ -248,9 +248,7 @@ struct Z_Construct_UClass_USNS_Widget_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
-#endif
 		{ "IncludePath", "SNS_Widget.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/SNS_Widget.h" },
@@ -267,7 +265,7 @@ struct Z_Construct_UClass_USNS_Widget_Statics
 		{ &Z_Construct_UFunction_USNS_Widget_OnAllDialoguesEnd, "OnAllDialoguesEnd" }, // 3904583543
 		{ &Z_Construct_UFunction_USNS_Widget_OnCurrentDialogueEnd, "OnCurrentDialogueEnd" }, // 3007142011
 		{ &Z_Construct_UFunction_USNS_Widget_OnCurrentLineEnd, "OnCurrentLineEnd" }, // 2949653208
-		{ &Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue, "OnReceivedDialogue" }, // 4291367176
+		{ &Z_Construct_UFunction_USNS_Widget_OnReceivedDialogue, "OnReceivedDialogue" }, // 635824218
 		{ &Z_Construct_UFunction_USNS_Widget_SetStyleFromSettings, "SetStyleFromSettings" }, // 1031797197
 		{ &Z_Construct_UFunction_USNS_Widget_StopAllOtherDialogues, "StopAllOtherDialogues" }, // 3534621672
 	};
@@ -277,7 +275,7 @@ struct Z_Construct_UClass_USNS_Widget_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USNS_Widget_Statics::NewProp_SettingsData = { "SettingsData", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_Widget, SettingsData), Z_Construct_UScriptStruct_FSNS_S_SettingsData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsData_MetaData), NewProp_SettingsData_MetaData) }; // 402575282
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USNS_Widget_Statics::NewProp_SettingsData = { "SettingsData", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USNS_Widget, SettingsData), Z_Construct_UScriptStruct_FSNS_S_SettingsData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettingsData_MetaData), NewProp_SettingsData_MetaData) }; // 2405993802
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USNS_Widget_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USNS_Widget_Statics::NewProp_SettingsData,
 };
@@ -320,14 +318,14 @@ USNS_Widget::~USNS_Widget() {}
 // End Class USNS_Widget
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics
+struct Z_CompiledInDeferFile_FID_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USNS_Widget, USNS_Widget::StaticClass, TEXT("USNS_Widget"), &Z_Registration_Info_UClass_USNS_Widget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_Widget), 2977536078U) },
+		{ Z_Construct_UClass_USNS_Widget, USNS_Widget::StaticClass, TEXT("USNS_Widget"), &Z_Registration_Info_UClass_USNS_Widget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USNS_Widget), 192946488U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_356512317(TEXT("/Script/SimpleNarrativeSystem"),
-	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_3392291098(TEXT("/Script/SimpleNarrativeSystem"),
+	Z_CompiledInDeferFile_FID_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_SNS_Widget_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

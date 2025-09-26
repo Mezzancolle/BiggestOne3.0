@@ -54,7 +54,7 @@ void USNS_DialogueWorldSubsystem::Tick(float DeltaTime)
 		return;
 
 	DialogueLineElapsedTime += DeltaTime;
-	DialogueLineRemaningTime -= DeltaTime;
+	//DialogueLineRemaningTime -= DeltaTime;
 
 	//if remaning time is over
 	if (DialogueLineRemaningTime < 0)
@@ -330,7 +330,7 @@ void USNS_DialogueWorldSubsystem::SkipCurrentLine()
 		return;
 	}
 
-	DialogueLineRemaningTime = 0;
+	DialogueLineRemaningTime = -1.f;
 
 	if (InGameManager->AudioComponent->Sound == nullptr || DialogueLineElapsedTime < InGameManager->AudioComponent->Sound->GetDuration() )
 	{
