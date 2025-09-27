@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SIMPLENARRATIVESYSTEM_SNS_S_Speaker_generated_h
 
-#define FID_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_Speaker_h_15_GENERATED_BODY \
+#define FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_Speaker_h_15_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSNS_S_Speaker_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FTableRowBase Super;
@@ -23,7 +23,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> SIMPLENARRATIVESYSTEM_API UScriptStruct* StaticStruct<struct FSNS_S_Speaker>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_HostProject_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_Speaker_h
+#define CURRENT_FILE_ID FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_SimpleNarrativeSystem_Source_SimpleNarrativeSystem_Public_Structs_SNS_S_Speaker_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
