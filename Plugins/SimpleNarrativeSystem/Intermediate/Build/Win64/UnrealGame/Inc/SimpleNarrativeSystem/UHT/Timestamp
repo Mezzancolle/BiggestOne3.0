@@ -2,12 +2,12 @@ C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\Sim
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_DataTableRowHandle.h
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_DialogueWorldSubsystem.h
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_Manager.h
-C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_NarrativeBlueprintFuncLib.h
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SettingsSaveGame.h
+C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_Widget.h
+C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_NarrativeBlueprintFuncLib.h
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SettingsGameInstanceSS.h
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_SpeakersDataTable.h
-C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\SNS_Widget.h
-C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_SettingsData.h
-C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_TimeStamp.h
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_Speaker.h
+C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_TimeStamp.h
+C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_SettingsData.h
 C:\Projects\Unreal Engine\BiggestOne3.0\Plugins\SimpleNarrativeSystem\Source\SimpleNarrativeSystem\Public\Structs\SNS_S_Dialogue.h
