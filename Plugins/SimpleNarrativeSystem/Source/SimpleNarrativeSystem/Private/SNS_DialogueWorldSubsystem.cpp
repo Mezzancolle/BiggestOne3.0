@@ -53,11 +53,23 @@ void USNS_DialogueWorldSubsystem::Tick(float DeltaTime)
 	if (!bIsTickEnabled)
 		return;
 
-	DialogueLineElapsedTime += DeltaTime;
-	//DialogueLineRemaningTime -= DeltaTime;
 
-	//if remaning time is over
-	if (DialogueLineRemaningTime < 0)
+	DialogueLineRemaningTime -= DeltaTime;
+	if (DialogueLineRemaningTime > 0)
+	{
+		DialogueElapsedTime += DeltaTime;
+	}
+
+	if (DialogueLineRemaningTime < 0 && !bShouldPlayNextLineWhenFinishedCurrent)
+	{
+		if (InGameManager->AudioComponent->Sound != nullptr && !InGameManager->AudioComponent->bIsPaused)
+		{
+			InGameManager->AudioComponent->Stop();
+		}
+	}
+
+	//if remaning time is over and it's allowed to continue automatically
+	if (DialogueLineRemaningTime < 0 && bShouldPlayNextLineWhenFinishedCurrent)
 	{
 		//it notifies when the previous dialogue is ended
 		if (/*CurrentDialogueLineIndex != 0 &&*/ InGameManager->SubtitlesWidget)
@@ -79,16 +91,17 @@ void USNS_DialogueWorldSubsystem::Tick(float DeltaTime)
 		if (bShouldAdjustAudioTiming)
 		{
 			bShouldAdjustAudioTiming = false;
-			DialogueLineElapsedTime = CurrentDialogue->TimeStamps[CurrentDialogueLineIndex-1].TimeStamp; // -1 because the time elapsed is the duration time of the previous dialogue line
+			DialogueElapsedTime = CurrentDialogue->TimeStamps[CurrentDialogueLineIndex-1].TimeStamp; // -1 because the time elapsed is the duration time of the previous dialogue line
 				
 			if (InGameManager->AudioComponent->Sound != nullptr)
 			{
-				InGameManager->AudioComponent->Play(DialogueLineElapsedTime);
+				InGameManager->AudioComponent->Play(DialogueElapsedTime);
 			}
 		}
 
 		SendDialogueToWidget();
-			
+
+		bShouldPlayNextLineWhenFinishedCurrent = CurrentDialogue->bShouldSkipAutomaticallyLines;
 	}
 
 }
@@ -158,7 +171,7 @@ void USNS_DialogueWorldSubsystem::PlayDialogue(bool& AllLinesEnded)
 
 	AllLinesEnded = false;
 
-	DialogueLineElapsedTime = 0;
+	DialogueElapsedTime = 0;
 	CurrentDialogueRowName = DialoguesToPlay[0].DialogueRowName;
 	FSNS_S_Dialogue* TempDialogue = DialoguesToPlay[0].DialoguesDataTable->FindRow<FSNS_S_Dialogue>(CurrentDialogueRowName, "", false);
 
@@ -198,6 +211,15 @@ void USNS_DialogueWorldSubsystem::PlayDialogue(bool& AllLinesEnded)
 			InGameManager->AudioComponent->Play(0.f);
 		}
 	}
+
+	if (!CurrentDialogue->bShouldSkipAutomaticallyLines && !CurrentDialogue->bCanBeSkipped)
+	{
+		//if dialogue can't be skipped and it shouldn't skip automatically lines, it will never end
+		FMessageLog("PIE").Warning(FText::Format(LOCTEXT("DialogueNeverEnds", "Dialogue '{0}' will never end because it can't be skipped and it shouldn't skip automatically lines!"), FText::FromName(CurrentDialogueRowName)));
+	}
+
+	//auto continue to next line if current dialogue when current line ends
+	bShouldPlayNextLineWhenFinishedCurrent = CurrentDialogue->bShouldSkipAutomaticallyLines;
 
 	CurrentDialogueLineIndex = 0;
 
@@ -303,13 +325,15 @@ void USNS_DialogueWorldSubsystem::SendDialogueToWidget()
 	}
 #endif
 
+	//if current dialogue has time setted for each dialogue line
 	if (CurrentDialogue->bIsTimePerDialogue)
 	{
-		DialogueLineRemaningTime += CurrentDialogue->TimeStamps[CurrentDialogueLineIndex].TimeStamp;
+		DialogueLineRemaningTime = CurrentDialogue->TimeStamps[CurrentDialogueLineIndex].TimeStamp;
 	}
+	//else it will calculate the time based on the time elapsed
 	else
 	{
-		DialogueLineRemaningTime += CurrentDialogue->TimeStamps[CurrentDialogueLineIndex].TimeStamp - DialogueLineElapsedTime;
+		DialogueLineRemaningTime = CurrentDialogue->TimeStamps[CurrentDialogueLineIndex].TimeStamp - DialogueElapsedTime;
 	}
 
 
@@ -331,8 +355,9 @@ void USNS_DialogueWorldSubsystem::SkipCurrentLine()
 	}
 
 	DialogueLineRemaningTime = -1.f;
+	bShouldPlayNextLineWhenFinishedCurrent = true;
 
-	if (InGameManager->AudioComponent->Sound == nullptr || DialogueLineElapsedTime < InGameManager->AudioComponent->Sound->GetDuration() )
+	if (InGameManager->AudioComponent->Sound == nullptr || DialogueElapsedTime < InGameManager->AudioComponent->Sound->GetDuration() )
 	{
 		bShouldAdjustAudioTiming = true;
 	}

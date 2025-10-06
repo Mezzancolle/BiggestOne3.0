@@ -68,8 +68,9 @@ private:
 	bool bIsTickEnabled;
 	bool bIsPlayingAudio;
 	bool bShouldAdjustAudioTiming;
+	bool bShouldPlayNextLineWhenFinishedCurrent;
 
-	float DialogueLineElapsedTime;
+	float DialogueElapsedTime;
 	float DialogueLineRemaningTime;
 	
 	TObjectPtr<ASNS_Manager> InGameManager;

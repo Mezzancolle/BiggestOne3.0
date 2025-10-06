@@ -19,14 +19,14 @@ struct SIMPLENARRATIVESYSTEM_API FSNS_S_Dialogue : public FTableRowBase
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "SimpleNarrativeSystem")
 	TSoftObjectPtr<USoundBase> AudioClip;
-
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Meta = (RequiredAssetDataTags = "RowStructure=/Script/SimpleNarrativeSystem.SNS_S_Speaker"), Category = "SimpleNarrativeSystem")
 	TObjectPtr<UDataTable> SpeakersDataTable;
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "CanBeSkipped?"), Category = "SimpleNarrativeSystem")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "CanBeSkipped?", ToolTip = "Can be skipped with a key?"), Category = "SimpleNarrativeSystem")
 	bool bCanBeSkipped = true;
-	UPROPERTY(BlueprintReadOnly, meta = (DisplayName = "IsTimePerDialogue?"), Category = "SimpleNarrativeSystem")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "IsTimePerDialogue?", ToolTip = "Is the time inside timestamps for the single line of full dialogue"), Category = "SimpleNarrativeSystem")
 	bool bIsTimePerDialogue = true;
-
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "ShouldBeSkippedAutomatically?", ToolTip = "Should skip automatically lines when line ends or wait for the skip key?"), Category = "SimpleNarrativeSystem")
+	bool bShouldSkipAutomaticallyLines = true;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "SimpleNarrativeSystem")
 	TArray<FSNS_S_TimeStamp> TimeStamps;
 
