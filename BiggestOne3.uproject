@@ -72,6 +72,11 @@
 			"Name": "StreamlineDLSSG",
 			"Enabled": true,
 			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss"
+		},
+		{
+			"Name": "XeSS",
+			"Enabled": true,
+			"MarketplaceURL": "https://www.fab.com/listings/8ab057da-982a-4e3b-8c56-ab56720d4641"
 		}
 	],
 	"TargetPlatforms": [
