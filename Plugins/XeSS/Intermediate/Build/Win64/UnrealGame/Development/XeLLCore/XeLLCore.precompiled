@@ -1,0 +1,8 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeLLCore\\XeLLDelegates.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeLLCore\\XeLLLatencyMarkers.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeLLCore\\XeLLMaxTickRateHandler.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeLLCore\\XeLLModule.cpp.obj"
+	]
+}

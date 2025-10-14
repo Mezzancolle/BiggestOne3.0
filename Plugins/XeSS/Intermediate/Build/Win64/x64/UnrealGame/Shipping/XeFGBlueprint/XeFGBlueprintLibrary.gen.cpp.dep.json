@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\intermediate\\build\\win64\\unrealgame\\inc\\xefgblueprint\\uht\\xefgblueprintlibrary.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\projects\\unreal engine\\biggestone3.0\\intermediate\\build\\win64\\x64\\biggestone3\\shipping\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\xefgblueprint\\definitions.xefgblueprint.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xefgblueprint\\public\\xefgblueprintlibrary.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\intermediate\\build\\win64\\unrealgame\\inc\\xefgblueprint\\uht\\xefgblueprintlibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

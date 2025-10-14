@@ -1,0 +1,10 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSSDK\\XeSSSDKLoader.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSSDK\\XeSSSDKModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSSDK\\XeSSSDKWrapperBase.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSSDK\\XeSSSDKWrapperD3D11.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSSDK\\XeSSSDKWrapperD3D12.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSSDK\\XeSSSDKWrapperVulkan.cpp.obj"
+	]
+}

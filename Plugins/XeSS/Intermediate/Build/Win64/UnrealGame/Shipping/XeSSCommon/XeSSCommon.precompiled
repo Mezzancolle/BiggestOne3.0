@@ -1,0 +1,8 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCommon\\XeSSCommon.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCommon\\XeSSCommonBlueprintModuleBase.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCommon\\XeSSCommonModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCommon\\XeSSCommonSceneViewExtensionBase.cpp.obj"
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSCore\\XeSSCore.init.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSCore\\XeSSSettings.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSCore\\XeSSHistory.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSCore\\XeSSModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSCore\\XeSSRHI.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSCore\\XeSSSettings.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSCore\\XeSSUpscaler.cpp.obj"
+	]
+}

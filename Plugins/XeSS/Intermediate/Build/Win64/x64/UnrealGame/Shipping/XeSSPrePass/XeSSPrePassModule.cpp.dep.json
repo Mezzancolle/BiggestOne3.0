@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xessprepass\\private\\xessprepassmodule.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\projects\\unreal engine\\biggestone3.0\\intermediate\\build\\win64\\x64\\biggestone3\\shipping\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\xessprepass\\definitions.xessprepass.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xessprepass\\private\\xessprepassmodule.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\plugindisalloweddescriptor.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\versescope.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

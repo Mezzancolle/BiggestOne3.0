@@ -1,0 +1,8 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeLLBlueprint\\XeLLBlueprint.init.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeLLBlueprint\\XeLLBlueprintLibrary.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeLLBlueprint\\XeLLBlueprintLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeLLBlueprint\\XeLLBlueprintModule.cpp.obj"
+	]
+}

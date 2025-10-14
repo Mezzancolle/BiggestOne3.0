@@ -1,0 +1,11 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCore\\XeSSCore.init.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCore\\XeSSSettings.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCore\\XeSSHistory.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCore\\XeSSModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCore\\XeSSRHI.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCore\\XeSSSettings.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSCore\\XeSSUpscaler.cpp.obj"
+	]
+}

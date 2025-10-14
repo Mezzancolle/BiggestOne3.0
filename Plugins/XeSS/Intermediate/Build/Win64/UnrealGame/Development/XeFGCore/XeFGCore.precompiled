@@ -1,0 +1,7 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeFGCore\\XeFGBackBufferHandler.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeFGCore\\XeFGModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeFGCore\\XeFGViewExtension.cpp.obj"
+	]
+}

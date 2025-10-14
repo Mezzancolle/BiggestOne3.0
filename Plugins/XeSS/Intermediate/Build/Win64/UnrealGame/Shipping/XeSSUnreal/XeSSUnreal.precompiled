@@ -1,0 +1,9 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSUnreal\\XeSSUnreal.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSUnreal\\XeSSUnrealD3D11RHI.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSUnreal\\XeSSUnrealD3D12RHI.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSUnreal\\XeSSUnrealModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\XeSSUnreal\\XeSSUnrealVulkanRHI.cpp.obj"
+	]
+}

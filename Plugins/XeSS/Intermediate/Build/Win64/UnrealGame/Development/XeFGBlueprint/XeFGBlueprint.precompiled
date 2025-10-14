@@ -1,0 +1,8 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeFGBlueprint\\XeFGBlueprint.init.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeFGBlueprint\\XeFGBlueprintLibrary.gen.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeFGBlueprint\\XeFGBlueprintLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeFGBlueprint\\XeFGBlueprintModule.cpp.obj"
+	]
+}

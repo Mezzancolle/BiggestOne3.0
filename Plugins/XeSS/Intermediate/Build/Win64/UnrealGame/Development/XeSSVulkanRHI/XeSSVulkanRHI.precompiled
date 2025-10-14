@@ -1,0 +1,6 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSVulkanRHI\\XeSSVulkanRHI.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\XeSSVulkanRHI\\XeSSVulkanRHIModule.cpp.obj"
+	]
+}

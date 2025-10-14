@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xellblueprint\\private\\xellblueprintmodule.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\projects\\unreal engine\\biggestone3.0\\intermediate\\build\\win64\\x64\\biggestone3\\shipping\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\xellblueprint\\definitions.xellblueprint.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xellblueprint\\private\\xellblueprintmodule.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xesscommon\\public\\xesscommonblueprintmodulebase.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xellblueprint\\public\\xellblueprintlibrary.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\intermediate\\build\\win64\\unrealgame\\inc\\xellblueprint\\uht\\xellblueprintlibrary.generated.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xell\\public\\xellmodule.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xesscommon\\public\\xesscommonmacros.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xell\\public\\xelllatencymarkers.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\public\\performance\\latencymarkermodule.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xell\\public\\xellmaxtickratehandler.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\public\\performance\\maxtickratehandlermodule.h",
+            "c:\\projects\\unreal engine\\biggestone3.0\\plugins\\xess\\source\\xessunreal\\public\\xessunrealcore.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
