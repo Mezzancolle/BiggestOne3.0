@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 3,
-	"VersionName": "4.0",
+	"Version": 5,
+	"VersionName": "5.0",
 	"FriendlyName": "SimpleNarrativeSystem",
 	"Description": "Simple Narrative System with events, data tables, subtitles style changing and custom rich text tags made by Ximer",
 	"Category": "Other",
