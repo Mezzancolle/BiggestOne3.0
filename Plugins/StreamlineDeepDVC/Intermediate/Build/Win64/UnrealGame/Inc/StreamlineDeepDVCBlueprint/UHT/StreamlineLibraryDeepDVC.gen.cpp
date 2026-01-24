@@ -82,10 +82,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCIntensity_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Read the console variables to infer the current DeepDVC intensity (\"r.Streamline.DeepDVC.Intensity) */" },
+#endif
 		{ "DisplayName", "Get DeepDVC Intensity" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Read the console variables to infer the current DeepDVC intensity (\"r.Streamline.DeepDVC.Intensity)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -127,10 +131,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Reads the console variables to infer the current DeepDVC mode*/" },
+#endif
 		{ "DisplayName", "Get DeepDVC Mode" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Reads the console variables to infer the current DeepDVC mode" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -175,10 +183,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCSaturationBoost
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Read the console variables to infer the current DeepDVC saturation boost (\"r.Streamline.DeepDVC.SaturationBoost) */" },
+#endif
 		{ "DisplayName", "Get DeepDVC Saturation Boost" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Read the console variables to infer the current DeepDVC saturation boost (\"r.Streamline.DeepDVC.SaturationBoost)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -220,10 +232,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDefaultDeepDVCMode_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Find a reasonable default DeepDVC mode based on current hardware */" },
+#endif
 		{ "DisplayName", "Get Default DeepDVC Mode" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Find a reasonable default DeepDVC mode based on current hardware" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -268,10 +284,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetSupportedDeepDVCModes_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Retrieves all supported DeepDVC modes. Can be used to populate UI */" },
+#endif
 		{ "DisplayName", "Get Supported DeepDVC Modes" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Retrieves all supported DeepDVC modes. Can be used to populate UI" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Inner_Underlying;
@@ -320,10 +340,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_IsDeepDVCModeSupported_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether a DeepDVC mode is supported */" },
+#endif
 		{ "DisplayName", "Is DeepDVC Mode Supported" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether a DeepDVC mode is supported" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DeepDVCMode_Underlying;
@@ -377,10 +401,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_IsDeepDVCSupported_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether DeepDVC is supported by the current GPU. Further details can be retrieved via QueryDeepDVCSupport*/" },
+#endif
 		{ "DisplayName", "Is NVIDIA DeepDVC Supported" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether DeepDVC is supported by the current GPU. Further details can be retrieved via QueryDeepDVCSupport" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -427,10 +455,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_QueryDeepDVCSupport_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether DeepDVC is supported by the current GPU\x09*/" },
+#endif
 		{ "DisplayName", "Query NVIDIA DeepDVC Support" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether DeepDVC is supported by the current GPU" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -475,10 +507,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCIntensity_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Set the console variable to controls how strong or subtle the DeepDVC filter effect will be on an image. A low intensity will keep the images closer to the original, while a high intensity will make the filter effect more pronounced. */" },
+#endif
 		{ "DisplayName", "Set DeepDVC Intensity" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the console variable to controls how strong or subtle the DeepDVC filter effect will be on an image. A low intensity will keep the images closer to the original, while a high intensity will make the filter effect more pronounced." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Intensity;
@@ -521,10 +557,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Sets the console variables to enable/disable DeepDVC\n\x09 * Off = DeepDVC disabled\n\x09 * On = DeepDVC always enabled\n\x09 */" },
+#endif
 		{ "DisplayName", "Set DeepDVC Mode" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the console variables to enable/disable DeepDVC\nOff = DeepDVC disabled\nOn = DeepDVC always enabled" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DeepDVCMode_Underlying;
@@ -570,10 +610,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCSaturationBoost
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|DeepDVC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Set the console variable that enhances the colors in them image, making them more vibrant and eye-catching. This setting will only be active if r.Streamline.DeepDVC.Intensity is relatively high. Once active, colors pop up more, making the image look more lively. */" },
+#endif
 		{ "DisplayName", "Set DeepDVC  Saturation Boost" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryDeepDVC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the console variable that enhances the colors in them image, making them more vibrant and eye-catching. This setting will only be active if r.Streamline.DeepDVC.Intensity is relatively high. Once active, colors pop up more, making the image look more lively." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Intensity;
@@ -640,17 +684,17 @@ struct Z_Construct_UClass_UStreamlineLibraryDeepDVC_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCIntensity, "GetDeepDVCIntensity" }, // 535101875
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCMode, "GetDeepDVCMode" }, // 3299407223
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCSaturationBoost, "GetDeepDVCSaturationBoost" }, // 2831105058
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDefaultDeepDVCMode, "GetDefaultDeepDVCMode" }, // 3585599449
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetSupportedDeepDVCModes, "GetSupportedDeepDVCModes" }, // 3166032357
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_IsDeepDVCModeSupported, "IsDeepDVCModeSupported" }, // 219497388
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_IsDeepDVCSupported, "IsDeepDVCSupported" }, // 1601422360
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_QueryDeepDVCSupport, "QueryDeepDVCSupport" }, // 2749605640
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCIntensity, "SetDeepDVCIntensity" }, // 3850975464
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCMode, "SetDeepDVCMode" }, // 2842696309
-		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCSaturationBoost, "SetDeepDVCSaturationBoost" }, // 3819584293
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCIntensity, "GetDeepDVCIntensity" }, // 3279551480
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCMode, "GetDeepDVCMode" }, // 1099487824
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDeepDVCSaturationBoost, "GetDeepDVCSaturationBoost" }, // 4077214160
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetDefaultDeepDVCMode, "GetDefaultDeepDVCMode" }, // 2816857247
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_GetSupportedDeepDVCModes, "GetSupportedDeepDVCModes" }, // 3947189142
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_IsDeepDVCModeSupported, "IsDeepDVCModeSupported" }, // 590126795
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_IsDeepDVCSupported, "IsDeepDVCSupported" }, // 281322571
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_QueryDeepDVCSupport, "QueryDeepDVCSupport" }, // 3692422543
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCIntensity, "SetDeepDVCIntensity" }, // 2764551046
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCMode, "SetDeepDVCMode" }, // 366849914
+		{ &Z_Construct_UFunction_UStreamlineLibraryDeepDVC_SetDeepDVCSaturationBoost, "SetDeepDVCSaturationBoost" }, // 591843914
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -696,18 +740,18 @@ UStreamlineLibraryDeepDVC::~UStreamlineLibraryDeepDVC() {}
 // End Class UStreamlineLibraryDeepDVC
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EStreamlineDeepDVCMode_StaticEnum, TEXT("EStreamlineDeepDVCMode"), &Z_Registration_Info_UEnum_EStreamlineDeepDVCMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4051356834U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UStreamlineLibraryDeepDVC, UStreamlineLibraryDeepDVC::StaticClass, TEXT("UStreamlineLibraryDeepDVC"), &Z_Registration_Info_UClass_UStreamlineLibraryDeepDVC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStreamlineLibraryDeepDVC), 2071164923U) },
+		{ Z_Construct_UClass_UStreamlineLibraryDeepDVC, UStreamlineLibraryDeepDVC::StaticClass, TEXT("UStreamlineLibraryDeepDVC"), &Z_Registration_Info_UClass_UStreamlineLibraryDeepDVC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStreamlineLibraryDeepDVC), 3603505022U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_3401793071(TEXT("/Script/StreamlineDeepDVCBlueprint"),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_1121724896(TEXT("/Script/StreamlineDeepDVCBlueprint"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineDeepDVC_Source_StreamlineDeepDVCBlueprint_Public_StreamlineLibraryDeepDVC_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

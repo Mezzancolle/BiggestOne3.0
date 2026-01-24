@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define DLSS_DLSSUpscalerModularFeature_generated_h
 
-#define FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_55_GENERATED_BODY \
+#define FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_55_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> DLSS_API UScriptStruct* StaticStruct<struct FDLSSUpscalerModularFeatureSettings>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h
+#define CURRENT_FILE_ID FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h
 
 
 #define FOREACH_ENUM_EDLSSUPSCALERMODULARFEATUREQUALITY(op) \

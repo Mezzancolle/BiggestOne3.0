@@ -306,10 +306,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryReflex_GetSupportedReflexModes_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|Reflex" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Retrieves all supported Reflex modes. Can be used to populate UI */" },
+#endif
 		{ "DisplayName", "Get Supported Reflex Modes" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryReflex.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Retrieves all supported Reflex modes. Can be used to populate UI" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Inner_Underlying;
@@ -358,10 +362,14 @@ struct Z_Construct_UFunction_UStreamlineLibraryReflex_IsReflexModeSupported_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline|Reflex" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether a Reflex mode is supported */" },
+#endif
 		{ "DisplayName", "Is Reflex Mode Supported" },
 		{ "ModuleRelativePath", "Public/StreamlineLibraryReflex.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether a Reflex mode is supported" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReflexMode_Underlying;
@@ -587,8 +595,8 @@ struct Z_Construct_UClass_UStreamlineLibraryReflex_Statics
 		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_GetGameToRenderLatencyInMs, "GetGameToRenderLatencyInMs" }, // 2037184333
 		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_GetReflexMode, "GetReflexMode" }, // 3874719261
 		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_GetRenderLatencyInMs, "GetRenderLatencyInMs" }, // 1746736805
-		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_GetSupportedReflexModes, "GetSupportedReflexModes" }, // 1407290941
-		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_IsReflexModeSupported, "IsReflexModeSupported" }, // 783739601
+		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_GetSupportedReflexModes, "GetSupportedReflexModes" }, // 3558088786
+		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_IsReflexModeSupported, "IsReflexModeSupported" }, // 392072337
 		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_IsReflexSupported, "IsReflexSupported" }, // 175652734
 		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_QueryReflexSupport, "QueryReflexSupport" }, // 2673584839
 		{ &Z_Construct_UFunction_UStreamlineLibraryReflex_SetReflexMode, "SetReflexMode" }, // 3780835439
@@ -637,18 +645,18 @@ UStreamlineLibraryReflex::~UStreamlineLibraryReflex() {}
 // End Class UStreamlineLibraryReflex
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EStreamlineReflexMode_StaticEnum, TEXT("EStreamlineReflexMode"), &Z_Registration_Info_UEnum_EStreamlineReflexMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1674400978U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UStreamlineLibraryReflex, UStreamlineLibraryReflex::StaticClass, TEXT("UStreamlineLibraryReflex"), &Z_Registration_Info_UClass_UStreamlineLibraryReflex, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStreamlineLibraryReflex), 3381352798U) },
+		{ Z_Construct_UClass_UStreamlineLibraryReflex, UStreamlineLibraryReflex::StaticClass, TEXT("UStreamlineLibraryReflex"), &Z_Registration_Info_UClass_UStreamlineLibraryReflex, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStreamlineLibraryReflex), 434212348U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_154640647(TEXT("/Script/StreamlineReflexBlueprint"),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_2479213636(TEXT("/Script/StreamlineReflexBlueprint"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineReflex_Source_StreamlineReflexBlueprint_Public_StreamlineLibraryReflex_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

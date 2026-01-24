@@ -421,10 +421,14 @@ struct Z_Construct_UFunction_UStreamlineLibrary_BreakStreamlineFeatureRequiremen
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*DisplayName = \"Get Streamline Feature Requirements\", */" },
+#endif
 		{ "Keywords", "Reflex, DLSS-G, Latewarp, DeepDVC" },
 		{ "ModuleRelativePath", "Public/StreamlineLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DisplayName = \"Get Streamline Feature Requirements\"," },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Requirements_Underlying;
@@ -516,11 +520,15 @@ struct Z_Construct_UFunction_UStreamlineLibrary_GetStreamlineFeatureInformation_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether a Streamline feature is supported by the current GPU. Further details can be retrieved via QueryStreamlineFeatureSupport*/" },
+#endif
 		{ "DisplayName", "Get NVIDIA Streamline Feature information" },
 		{ "Keywords", "Reflex, DLSS-G, Latewarp, DeepDVC" },
 		{ "ModuleRelativePath", "Public/StreamlineLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether a Streamline feature is supported by the current GPU. Further details can be retrieved via QueryStreamlineFeatureSupport" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Feature_Underlying;
@@ -570,11 +578,15 @@ struct Z_Construct_UFunction_UStreamlineLibrary_IsStreamlineFeatureSupported_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether a Streamline feature is supported by the current GPU. Further details can be retrieved via QueryStreamlineFeatureSupport*/" },
+#endif
 		{ "DisplayName", "Is NVIDIA Streamline Feature Supported" },
 		{ "Keywords", "Reflex, DLSS-G, Latewarp, DeepDVC" },
 		{ "ModuleRelativePath", "Public/StreamlineLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether a Streamline feature is supported by the current GPU. Further details can be retrieved via QueryStreamlineFeatureSupport" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Feature_Underlying;
@@ -629,11 +641,15 @@ struct Z_Construct_UFunction_UStreamlineLibrary_QueryStreamlineFeatureSupport_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Streamline" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether Streamline feature  is supported by the current GPU\x09*/" },
+#endif
 		{ "DisplayName", "Query NVIDIA Streamline Feature Support" },
 		{ "Keywords", "Reflex, DLSS-G, Latewarp, DeepDVC" },
 		{ "ModuleRelativePath", "Public/StreamlineLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether Streamline feature  is supported by the current GPU" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Feature_Underlying;
@@ -702,10 +718,10 @@ struct Z_Construct_UClass_UStreamlineLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UStreamlineLibrary_BreakStreamlineFeatureRequirements, "BreakStreamlineFeatureRequirements" }, // 3517188215
-		{ &Z_Construct_UFunction_UStreamlineLibrary_GetStreamlineFeatureInformation, "GetStreamlineFeatureInformation" }, // 1015904408
-		{ &Z_Construct_UFunction_UStreamlineLibrary_IsStreamlineFeatureSupported, "IsStreamlineFeatureSupported" }, // 3254104577
-		{ &Z_Construct_UFunction_UStreamlineLibrary_QueryStreamlineFeatureSupport, "QueryStreamlineFeatureSupport" }, // 180657615
+		{ &Z_Construct_UFunction_UStreamlineLibrary_BreakStreamlineFeatureRequirements, "BreakStreamlineFeatureRequirements" }, // 2830119500
+		{ &Z_Construct_UFunction_UStreamlineLibrary_GetStreamlineFeatureInformation, "GetStreamlineFeatureInformation" }, // 3927334919
+		{ &Z_Construct_UFunction_UStreamlineLibrary_IsStreamlineFeatureSupported, "IsStreamlineFeatureSupported" }, // 926408577
+		{ &Z_Construct_UFunction_UStreamlineLibrary_QueryStreamlineFeatureSupport, "QueryStreamlineFeatureSupport" }, // 2440693590
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -751,7 +767,7 @@ UStreamlineLibrary::~UStreamlineLibrary() {}
 // End Class UStreamlineLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EStreamlineFeature_StaticEnum, TEXT("EStreamlineFeature"), &Z_Registration_Info_UEnum_EStreamlineFeature, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3385206105U) },
@@ -763,12 +779,12 @@ struct Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_Strea
 		{ FStreamlineFeatureRequirements::StaticStruct, Z_Construct_UScriptStruct_FStreamlineFeatureRequirements_Statics::NewStructOps, TEXT("StreamlineFeatureRequirements"), &Z_Registration_Info_UScriptStruct_StreamlineFeatureRequirements, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FStreamlineFeatureRequirements), 730209978U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UStreamlineLibrary, UStreamlineLibrary::StaticClass, TEXT("UStreamlineLibrary"), &Z_Registration_Info_UClass_UStreamlineLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStreamlineLibrary), 279699808U) },
+		{ Z_Construct_UClass_UStreamlineLibrary, UStreamlineLibrary::StaticClass, TEXT("UStreamlineLibrary"), &Z_Registration_Info_UClass_UStreamlineLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStreamlineLibrary), 342570857U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_214366156(TEXT("/Script/StreamlineBlueprint"),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_2060041650(TEXT("/Script/StreamlineBlueprint"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_StreamlineCore_Source_StreamlineBlueprint_Public_StreamlineLibrary_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

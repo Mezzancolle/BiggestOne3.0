@@ -148,10 +148,14 @@ struct Z_Construct_UFunction_UNISLibrary_GetDefaultNISMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "///* Find a reasonable default NIS mode based on current hardware */\n" },
+#endif
 		{ "DisplayName", "Get Default NIS Mode" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Find a reasonable default NIS mode based on current hardware" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -197,10 +201,14 @@ struct Z_Construct_UFunction_UNISLibrary_GetNISRecommendedScreenPercentage_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Returns the recommended screen percentage for a given NIS mode. Returns CustomScreenPercentage if NISMode is UNISMode::Custom */" },
+#endif
 		{ "DisplayName", "Get NIS Recommended Screen Percentage" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the recommended screen percentage for a given NIS mode. Returns CustomScreenPercentage if NISMode is UNISMode::Custom" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_NISMode_Underlying;
@@ -250,10 +258,14 @@ struct Z_Construct_UFunction_UNISLibrary_GetNISScreenPercentageRange_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The global screen percentage range that NIS supports. */" },
+#endif
 		{ "DisplayName", "Get NIS Screen Percentage Range" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The global screen percentage range that NIS supports." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinScreenPercentage;
@@ -300,10 +312,14 @@ struct Z_Construct_UFunction_UNISLibrary_GetSupportedNISModes_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Retrieves all supported NIS modes. Can be used to populate UI */" },
+#endif
 		{ "DisplayName", "Get Supported NIS Modes" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Retrieves all supported NIS modes. Can be used to populate UI" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Inner_Underlying;
@@ -352,10 +368,14 @@ struct Z_Construct_UFunction_UNISLibrary_IsNISModeSupported_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether a NIS mode is supported */" },
+#endif
 		{ "DisplayName", "Is NIS Mode Supported" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether a NIS mode is supported" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_NISMode_Underlying;
@@ -409,10 +429,14 @@ struct Z_Construct_UFunction_UNISLibrary_IsNISSupported_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Checks whether NIS is supported by the current GPU. Further details can be retrieved via QueryNISSupport*/" },
+#endif
 		{ "DisplayName", "Is NVIDIA NIS Supported" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether NIS is supported by the current GPU. Further details can be retrieved via QueryNISSupport" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -459,11 +483,15 @@ struct Z_Construct_UFunction_UNISLibrary_SetNISCustomScreenPercentage_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Set the screen percentage used for Custom mode (100% by default) */" },
+#endif
 		{ "CPP_Default_CustomScreenPercentage", "100.000000" },
 		{ "DisplayName", "Set NIS Custom Screen Percentage" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the screen percentage used for Custom mode (100% by default)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_CustomScreenPercentage;
@@ -506,10 +534,14 @@ struct Z_Construct_UFunction_UNISLibrary_SetNISMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Sets the console variables to enable/disable NIS (r.NIS.Enable, r.NIS.Upscaling, r.ScreenPercentage, r.TemporalAA.Upsampling, r.TemporalAA.Upscaler)*/" },
+#endif
 		{ "DisplayName", "Set NIS Mode" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the console variables to enable/disable NIS (r.NIS.Enable, r.NIS.Upscaling, r.ScreenPercentage, r.TemporalAA.Upsampling, r.TemporalAA.Upscaler)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_NISMode_Underlying;
@@ -555,10 +587,14 @@ struct Z_Construct_UFunction_UNISLibrary_SetNISSharpness_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NIS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Sets the console variables to enable additional NIS sharpening. Set to 0 to disable (r.NGX.NIS.Sharpness) */" },
+#endif
 		{ "DisplayName", "Set NIS Sharpness" },
 		{ "ModuleRelativePath", "Public/NISLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the console variables to enable additional NIS sharpening. Set to 0 to disable (r.NGX.NIS.Sharpness)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Sharpness;
@@ -623,15 +659,15 @@ struct Z_Construct_UClass_UNISLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNISLibrary_GetDefaultNISMode, "GetDefaultNISMode" }, // 2419010373
-		{ &Z_Construct_UFunction_UNISLibrary_GetNISRecommendedScreenPercentage, "GetNISRecommendedScreenPercentage" }, // 627514269
-		{ &Z_Construct_UFunction_UNISLibrary_GetNISScreenPercentageRange, "GetNISScreenPercentageRange" }, // 3772439998
-		{ &Z_Construct_UFunction_UNISLibrary_GetSupportedNISModes, "GetSupportedNISModes" }, // 3281719202
-		{ &Z_Construct_UFunction_UNISLibrary_IsNISModeSupported, "IsNISModeSupported" }, // 1163446346
-		{ &Z_Construct_UFunction_UNISLibrary_IsNISSupported, "IsNISSupported" }, // 3467889516
-		{ &Z_Construct_UFunction_UNISLibrary_SetNISCustomScreenPercentage, "SetNISCustomScreenPercentage" }, // 3675613004
-		{ &Z_Construct_UFunction_UNISLibrary_SetNISMode, "SetNISMode" }, // 2969764325
-		{ &Z_Construct_UFunction_UNISLibrary_SetNISSharpness, "SetNISSharpness" }, // 3009922729
+		{ &Z_Construct_UFunction_UNISLibrary_GetDefaultNISMode, "GetDefaultNISMode" }, // 3453906264
+		{ &Z_Construct_UFunction_UNISLibrary_GetNISRecommendedScreenPercentage, "GetNISRecommendedScreenPercentage" }, // 119956211
+		{ &Z_Construct_UFunction_UNISLibrary_GetNISScreenPercentageRange, "GetNISScreenPercentageRange" }, // 2976613432
+		{ &Z_Construct_UFunction_UNISLibrary_GetSupportedNISModes, "GetSupportedNISModes" }, // 2198815062
+		{ &Z_Construct_UFunction_UNISLibrary_IsNISModeSupported, "IsNISModeSupported" }, // 1862229451
+		{ &Z_Construct_UFunction_UNISLibrary_IsNISSupported, "IsNISSupported" }, // 1910983314
+		{ &Z_Construct_UFunction_UNISLibrary_SetNISCustomScreenPercentage, "SetNISCustomScreenPercentage" }, // 793877913
+		{ &Z_Construct_UFunction_UNISLibrary_SetNISMode, "SetNISMode" }, // 1988042442
+		{ &Z_Construct_UFunction_UNISLibrary_SetNISSharpness, "SetNISSharpness" }, // 3638504421
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -677,19 +713,19 @@ UNISLibrary::~UNISLibrary() {}
 // End Class UNISLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HostProject_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ UNISSupport_StaticEnum, TEXT("UNISSupport"), &Z_Registration_Info_UEnum_UNISSupport, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 237391673U) },
 		{ UNISMode_StaticEnum, TEXT("UNISMode"), &Z_Registration_Info_UEnum_UNISMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1518071886U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNISLibrary, UNISLibrary::StaticClass, TEXT("UNISLibrary"), &Z_Registration_Info_UClass_UNISLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNISLibrary), 3163518986U) },
+		{ Z_Construct_UClass_UNISLibrary, UNISLibrary::StaticClass, TEXT("UNISLibrary"), &Z_Registration_Info_UClass_UNISLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNISLibrary), 1259421941U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_2282237378(TEXT("/Script/NISBlueprint"),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_3636155553(TEXT("/Script/NISBlueprint"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_NIS_Source_NISBlueprint_Public_NISLibrary_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

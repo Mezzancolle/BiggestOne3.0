@@ -177,12 +177,16 @@ struct Z_Construct_UFunction_UDLSSLibrary_EnableDLAA_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Enable/disable DLAA. Note that while DLAA is enabled, DLSS will be automatically disabled */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use 'Enable DLSS-SR' instead" },
 		{ "DisplayName", "Enable DLAA" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable/disable DLAA. Note that while DLAA is enabled, DLSS will be automatically disabled" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bEnabled_SetBit(void* Obj);
@@ -230,10 +234,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Enable/disable DLSS Super Resolution/DLAA\n\x09 * To select a DLSS-SR quality mode, set an appropriate upscale screen percentage with r.ScreenPercentage. Use GetDlssModeInformation to find optimal screen percentage\n\x09 * To select DLAA, set the upscale screen percentage to 100 (r.ScreenPercentage=100)\n\x09 */" },
+#endif
 		{ "DisplayName", "Enable DLSS-SR" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable/disable DLSS Super Resolution/DLAA\nTo select a DLSS-SR quality mode, set an appropriate upscale screen percentage with r.ScreenPercentage. Use GetDlssModeInformation to find optimal screen percentage\nTo select DLAA, set the upscale screen percentage to 100 (r.ScreenPercentage=100)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bEnabled_SetBit(void* Obj);
@@ -281,10 +289,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Enable/disable DLSS Ray Reconstruction */" },
+#endif
 		{ "DisplayName", "Enable DLSS-RR" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable/disable DLSS Ray Reconstruction" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bEnabled_SetBit(void* Obj);
@@ -332,10 +344,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_GetDefaultDLSSMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Find a reasonable default DLSS mode based on current hardware */" },
+#endif
 		{ "DisplayName", "Get Default DLSS Mode" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Find a reasonable default DLSS mode based on current hardware" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -381,10 +397,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_GetDLSSMinimumDriverVersion_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If QueryDLSSSupport returns \"NotSupportedDriverOutOfDate\", then MinDriverVersionMajor and MinDriverVersionMinor contains the required driver version.*/" },
+#endif
 		{ "DisplayName", "Get DLSS-SR Minimum DriverVersion" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If QueryDLSSSupport returns \"NotSupportedDriverOutOfDate\", then MinDriverVersionMajor and MinDriverVersionMinor contains the required driver version." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MinDriverVersionMajor;
@@ -431,12 +451,16 @@ struct Z_Construct_UFunction_UDLSSLibrary_GetDLSSMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Read the current DLSS mode */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use 'Is DLSS-SR Enabled' instead" },
 		{ "DisplayName", "Get DLSS Mode" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Read the current DLSS mode" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -488,11 +512,15 @@ struct Z_Construct_UFunction_UDLSSLibrary_GetDLSSModeInformation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Provide additional details (such as screen percentage ranges) about a DLSS mode. Screen Resolution is required for Auto mode */" },
+#endif
 		{ "DisplayName", "Get DLSS-SR Mode Information" },
 		{ "HidePin", "OptimalSharpness" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Provide additional details (such as screen percentage ranges) about a DLSS mode. Screen Resolution is required for Auto mode" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OptimalSharpness_MetaData[] = {
 		{ "DisplayName", "Optimal Sharpness DEPRECATED" },
@@ -580,10 +608,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If QueryDLSSRRSupport returns \"NotSupportedDriverOutOfDate\", then MinDriverVersionMajor and MinDriverVersionMinor contains the required driver version.*/" },
+#endif
 		{ "DisplayName", "Get DLSS-RR Minimum DriverVersion" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If QueryDLSSRRSupport returns \"NotSupportedDriverOutOfDate\", then MinDriverVersionMajor and MinDriverVersionMinor contains the required driver version." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MinDriverVersionMajor;
@@ -631,10 +663,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_GetDLSSScreenPercentageRange_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The global screen percentage range that DLSS supports. Excludes DLSS modes with fixed screen percentage. Also see GetDLSSModeInformation*/" },
+#endif
 		{ "DisplayName", "Get DLSS-SR Screenpercentage Range" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The global screen percentage range that DLSS supports. Excludes DLSS modes with fixed screen percentage. Also see GetDLSSModeInformation" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinScreenPercentage;
@@ -681,10 +717,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_GetSupportedDLSSModes_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Retrieve all supported DLSS modes. Can be used to populate UI */" },
+#endif
 		{ "DisplayName", "Get Supported DLSS-SR Modes" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Retrieve all supported DLSS modes. Can be used to populate UI" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Inner_Underlying;
@@ -732,12 +772,16 @@ struct Z_Construct_UFunction_UDLSSLibrary_IsDLAAEnabled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether DLAA is enabled */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use 'Is DLSS-SR Enabled' instead" },
 		{ "DisplayName", "Is DLAA Enabled" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether DLAA is enabled" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -784,10 +828,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether DLSS Super Resolution/DLAA is enabled */" },
+#endif
 		{ "DisplayName", "Is DLSS-SR Enabled" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether DLSS Super Resolution/DLAA is enabled" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -835,10 +883,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSModeSupported_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether a DLSS mode is supported */" },
+#endif
 		{ "DisplayName", "Is DLSS-SR Mode Supported" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether a DLSS mode is supported" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DLSSMode_Underlying;
@@ -892,10 +944,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether DLSS Ray Reconstruction is enabled */" },
+#endif
 		{ "DisplayName", "Is DLSS-RR Enabled" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether DLSS Ray Reconstruction is enabled" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -942,10 +998,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether NVIDIA DLSS Ray Reconstruction is supported. Further details can be retrieved via 'Query DLSS-RR Support' */" },
+#endif
 		{ "DisplayName", "Is DLSS-RR Supported" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether NVIDIA DLSS Ray Reconstruction is supported. Further details can be retrieved via 'Query DLSS-RR Support'" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -992,10 +1052,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSSupported_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether NVIDIA DLSS Super Resolution/DLAA is supported. Further details can be retrieved via 'Query DLSS-SR Support' */" },
+#endif
 		{ "DisplayName", "Is DLSS-SR Supported" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether NVIDIA DLSS Super Resolution/DLAA is supported. Further details can be retrieved via 'Query DLSS-SR Support'" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -1042,10 +1106,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_IsRayTracingAvailable_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Returns 'true' when running on RT-capable machine */" },
+#endif
 		{ "DisplayName", "Is RayTracing Available" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns 'true' when running on RT-capable machine" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -1092,10 +1160,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether NVIDIA DLSS Ray Reconstruction is supported */" },
+#endif
 		{ "DisplayName", "Query DLSS-RR Support" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether NVIDIA DLSS Ray Reconstruction is supported" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -1140,10 +1212,14 @@ struct Z_Construct_UFunction_UDLSSLibrary_QueryDLSSSupport_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether NVIDIA DLSS Super Resolution/DLAA is supported */" },
+#endif
 		{ "DisplayName", "Query DLSS-SR Support" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether NVIDIA DLSS Super Resolution/DLAA is supported" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -1189,12 +1265,16 @@ struct Z_Construct_UFunction_UDLSSLibrary_SetDLSSMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Enable/disable DLSS */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use 'Enable DLSS-SR' instead" },
 		{ "DisplayName", "Set DLSS Mode" },
 		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable/disable DLSS" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif // WITH_METADATA
@@ -1278,26 +1358,26 @@ struct Z_Construct_UClass_UDLSSLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLAA, "EnableDLAA" }, // 1486387372
-		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLSS, "EnableDLSS" }, // 1016709314
-		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR, "EnableDLSSRR" }, // 1435220537
-		{ &Z_Construct_UFunction_UDLSSLibrary_GetDefaultDLSSMode, "GetDefaultDLSSMode" }, // 3651983040
-		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSMinimumDriverVersion, "GetDLSSMinimumDriverVersion" }, // 4010276412
-		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSMode, "GetDLSSMode" }, // 4128368287
-		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSModeInformation, "GetDLSSModeInformation" }, // 188026370
-		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion, "GetDLSSRRMinimumDriverVersion" }, // 854212532
-		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSScreenPercentageRange, "GetDLSSScreenPercentageRange" }, // 1444660182
-		{ &Z_Construct_UFunction_UDLSSLibrary_GetSupportedDLSSModes, "GetSupportedDLSSModes" }, // 2647515092
-		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLAAEnabled, "IsDLAAEnabled" }, // 1414907100
-		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled, "IsDLSSEnabled" }, // 571600898
-		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSModeSupported, "IsDLSSModeSupported" }, // 3712987837
-		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled, "IsDLSSRREnabled" }, // 902323919
-		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported, "IsDLSSRRSupported" }, // 2817126889
-		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSSupported, "IsDLSSSupported" }, // 356525947
-		{ &Z_Construct_UFunction_UDLSSLibrary_IsRayTracingAvailable, "IsRayTracingAvailable" }, // 1443005276
-		{ &Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport, "QueryDLSSRRSupport" }, // 1902374311
-		{ &Z_Construct_UFunction_UDLSSLibrary_QueryDLSSSupport, "QueryDLSSSupport" }, // 2093921434
-		{ &Z_Construct_UFunction_UDLSSLibrary_SetDLSSMode, "SetDLSSMode" }, // 343093865
+		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLAA, "EnableDLAA" }, // 2493962856
+		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLSS, "EnableDLSS" }, // 376418636
+		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR, "EnableDLSSRR" }, // 1434939864
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetDefaultDLSSMode, "GetDefaultDLSSMode" }, // 1141565319
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSMinimumDriverVersion, "GetDLSSMinimumDriverVersion" }, // 2703984404
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSMode, "GetDLSSMode" }, // 2776239495
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSModeInformation, "GetDLSSModeInformation" }, // 3262164831
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion, "GetDLSSRRMinimumDriverVersion" }, // 1112925343
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSScreenPercentageRange, "GetDLSSScreenPercentageRange" }, // 3377117751
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetSupportedDLSSModes, "GetSupportedDLSSModes" }, // 3247592637
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLAAEnabled, "IsDLAAEnabled" }, // 1241290787
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled, "IsDLSSEnabled" }, // 1900223867
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSModeSupported, "IsDLSSModeSupported" }, // 3034831656
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled, "IsDLSSRREnabled" }, // 2997936991
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported, "IsDLSSRRSupported" }, // 2597313522
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSSupported, "IsDLSSSupported" }, // 4014218547
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsRayTracingAvailable, "IsRayTracingAvailable" }, // 1236386804
+		{ &Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport, "QueryDLSSRRSupport" }, // 893629990
+		{ &Z_Construct_UFunction_UDLSSLibrary_QueryDLSSSupport, "QueryDLSSSupport" }, // 881836766
+		{ &Z_Construct_UFunction_UDLSSLibrary_SetDLSSMode, "SetDLSSMode" }, // 166973303
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1343,19 +1423,19 @@ UDLSSLibrary::~UDLSSLibrary() {}
 // End Class UDLSSLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ UDLSSSupport_StaticEnum, TEXT("UDLSSSupport"), &Z_Registration_Info_UEnum_UDLSSSupport, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 395222663U) },
 		{ UDLSSMode_StaticEnum, TEXT("UDLSSMode"), &Z_Registration_Info_UEnum_UDLSSMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3290494289U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDLSSLibrary, UDLSSLibrary::StaticClass, TEXT("UDLSSLibrary"), &Z_Registration_Info_UClass_UDLSSLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDLSSLibrary), 2762457857U) },
+		{ Z_Construct_UClass_UDLSSLibrary, UDLSSLibrary::StaticClass, TEXT("UDLSSLibrary"), &Z_Registration_Info_UClass_UDLSSLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDLSSLibrary), 511229190U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_1496337841(TEXT("/Script/DLSSBlueprint"),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_990814695(TEXT("/Script/DLSSBlueprint"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

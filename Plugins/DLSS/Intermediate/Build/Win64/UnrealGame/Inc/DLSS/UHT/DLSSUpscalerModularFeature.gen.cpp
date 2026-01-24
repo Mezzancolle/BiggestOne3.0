@@ -38,7 +38,9 @@ struct Z_Construct_UEnum_DLSS_EDLSSUpscalerModularFeatureQuality_Statics
 		{ "Auto.ToolTip", "Use Auto to select best quality setting for a given resolution" },
 		{ "Balanced.DisplayName", "Balanced" },
 		{ "Balanced.Name", "EDLSSUpscalerModularFeatureQuality::Balanced" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS Quality modes. */" },
+#endif
 		{ "Count.Hidden", "" },
 		{ "Count.Name", "EDLSSUpscalerModularFeatureQuality::Count" },
 		{ "DLAA.DisplayName", "DLAA" },
@@ -48,7 +50,9 @@ struct Z_Construct_UEnum_DLSS_EDLSSUpscalerModularFeatureQuality_Statics
 		{ "Performance.Name", "EDLSSUpscalerModularFeatureQuality::Performance" },
 		{ "Quality.DisplayName", "Quality" },
 		{ "Quality.Name", "EDLSSUpscalerModularFeatureQuality::Quality" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS Quality modes." },
+#endif
 		{ "UltraPerformance.DisplayName", "Ultra Performance" },
 		{ "UltraPerformance.Name", "EDLSSUpscalerModularFeatureQuality::UltraPerformance" },
 		{ "UltraQuality.DisplayName", "Ultra Quality" },
@@ -108,16 +112,24 @@ struct Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n* DLSS settings used by the Modular Feature.\n*/" },
+#endif
 		{ "ModuleRelativePath", "Private/DLSSUpscalerModularFeature.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS settings used by the Modular Feature." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quality_MetaData[] = {
 		{ "Category", "DLSS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS quality. */" },
+#endif
 		{ "DisplayName", "Quality" },
 		{ "ModuleRelativePath", "Private/DLSSUpscalerModularFeature.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS quality." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Quality_Underlying;
@@ -130,7 +142,7 @@ struct Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics
 	static const UECodeGen_Private::FStructParams StructParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::NewProp_Quality_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDLSSUpscalerModularFeatureSettings, Quality), Z_Construct_UEnum_DLSS_EDLSSUpscalerModularFeatureQuality, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Quality_MetaData), NewProp_Quality_MetaData) }; // 1717279563
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDLSSUpscalerModularFeatureSettings, Quality), Z_Construct_UEnum_DLSS_EDLSSUpscalerModularFeatureQuality, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Quality_MetaData), NewProp_Quality_MetaData) }; // 2317621751
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::NewProp_Quality_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::NewProp_Quality,
@@ -160,18 +172,18 @@ UScriptStruct* Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings()
 // End ScriptStruct FDLSSUpscalerModularFeatureSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EDLSSUpscalerModularFeatureQuality_StaticEnum, TEXT("EDLSSUpscalerModularFeatureQuality"), &Z_Registration_Info_UEnum_EDLSSUpscalerModularFeatureQuality, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1717279563U) },
+		{ EDLSSUpscalerModularFeatureQuality_StaticEnum, TEXT("EDLSSUpscalerModularFeatureQuality"), &Z_Registration_Info_UEnum_EDLSSUpscalerModularFeatureQuality, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2317621751U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FDLSSUpscalerModularFeatureSettings::StaticStruct, Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::NewStructOps, TEXT("DLSSUpscalerModularFeatureSettings"), &Z_Registration_Info_UScriptStruct_DLSSUpscalerModularFeatureSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDLSSUpscalerModularFeatureSettings), 182740937U) },
+		{ FDLSSUpscalerModularFeatureSettings::StaticStruct, Z_Construct_UScriptStruct_FDLSSUpscalerModularFeatureSettings_Statics::NewStructOps, TEXT("DLSSUpscalerModularFeatureSettings"), &Z_Registration_Info_UScriptStruct_DLSSUpscalerModularFeatureSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDLSSUpscalerModularFeatureSettings), 2192163905U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_2784050980(TEXT("/Script/DLSS"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_3124613378(TEXT("/Script/DLSS"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Private_DLSSUpscalerModularFeature_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -327,31 +327,47 @@ struct Z_Construct_UClass_UDLSSOverrideSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShowDLSSIncompatiblePluginsToolsWarnings_MetaData[] = {
 		{ "Category", "Editor (Local)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables warnings about plugins & tools that are incompatible with DLSS/DLAA in the editor. This setting and the project setting both must be set to get warnings */" },
+#endif
 		{ "DisplayName", "Warn about incompatible plugins and tools" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables warnings about plugins & tools that are incompatible with DLSS/DLAA in the editor. This setting and the project setting both must be set to get warnings" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowDLSSSDebugOnScreenMessages_MetaData[] = {
 		{ "Category", "Editor (Local)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables on screen warnings and errors about DLSS/DLAA  */" },
+#endif
 		{ "DisplayName", "Show various DLSS/DLAA on screen debug messages" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables on screen warnings and errors about DLSS/DLAA" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnableDLSSInEditorViewportsOverride_MetaData[] = {
 		{ "Category", "Editor (Local)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables DLSS/DLAA in editor viewports. Saved to local user config only.*/" },
+#endif
 		{ "DisplayName", "Enable DLSS/DLAA to be turned on in Editor viewports" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables DLSS/DLAA in editor viewports. Saved to local user config only." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnableDLSSInPlayInEditorViewportsOverride_MetaData[] = {
 		{ "Category", "Editor (Local)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables DLSS/DLAA in play in editor viewports. Saved to local user config only. */" },
+#endif
 		{ "DisplayName", "Enable DLSS/DLAA in Play In Editor viewports" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables DLSS/DLAA in play in editor viewports. Saved to local user config only." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bShowDLSSIncompatiblePluginsToolsWarnings_SetBit(void* Obj);
@@ -446,86 +462,130 @@ struct Z_Construct_UClass_UDLSSSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowOTAUpdate_MetaData[] = {
 		{ "Category", "General Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Allow OTA updates of DLSS models */" },
+#endif
 		{ "ConfigRestartRequired", "TRUE" },
 		{ "DisplayName", "Allow OTA update" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allow OTA updates of DLSS models" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NVIDIANGXApplicationId_MetaData[] = {
 		{ "Category", "General Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** By default the DLSS plugin uses the UE Project ID to initialize DLSS. In some cases NVIDIA might provide a separate NVIDIA Application ID, which should be put here. Please refer to https://developer.nvidia.com/dlss for details*/" },
+#endif
 		{ "ConfigRestartRequired", "TRUE" },
 		{ "DisplayName", "NVIDIA NGX Application ID" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "By default the DLSS plugin uses the UE Project ID to initialize DLSS. In some cases NVIDIA might provide a separate NVIDIA Application ID, which should be put here. Please refer to https://developer.nvidia.com/dlss for details" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BiasCurrentColorStencilValue_MetaData[] = {
 		{ "Category", "General Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The value that would be considered as Bias Color in the custom depth stencil buffer. Must not be set to 0**/" },
+#endif
 		{ "DisplayName", "Bias Current Color Custom Stencil Value" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The value that would be considered as Bias Color in the custom depth stencil buffer. Must not be set to 0*" },
+#endif
 		{ "UIMin", "1" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableDLSSD3D12_MetaData[] = {
 		{ "Category", "General Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Enable DLSS/DLAA for D3D12, if the driver supports it at runtime */" },
+#endif
 		{ "ConfigRestartRequired", "TRUE" },
 		{ "DisplayName", "Enable DLSS/DLAA for the D3D12RHI" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable DLSS/DLAA for D3D12, if the driver supports it at runtime" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableDLSSD3D11_MetaData[] = {
 		{ "Category", "General Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Enable DLSS/DLAA for D3D11, if the driver supports it at runtime */" },
+#endif
 		{ "ConfigRestartRequired", "TRUE" },
 		{ "DisplayName", "Enable DLSS/DLAA for the D3D11RHI" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable DLSS/DLAA for D3D11, if the driver supports it at runtime" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableDLSSVulkan_MetaData[] = {
 		{ "Category", "General Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Enable DLSS/DLAA for Vulkan, if the driver supports it at runtime */" },
+#endif
 		{ "ConfigRestartRequired", "TRUE" },
 		{ "DisplayName", "Enable DLSS/DLAA for the VulkanRHI" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable DLSS/DLAA for Vulkan, if the driver supports it at runtime" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShowDLSSIncompatiblePluginsToolsWarnings_MetaData[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables warnings about plugins & tools that are incompatible with DLSS/DLAA in the editor. This setting and the local setting both must be set to get warnings */" },
+#endif
 		{ "DisplayName", "Warn about incompatible plugins and tools" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables warnings about plugins & tools that are incompatible with DLSS/DLAA in the editor. This setting and the local setting both must be set to get warnings" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableDLSSInEditorViewports_MetaData[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables DLSS/DLAA in editor viewports. This project wide setting can be locally overridden in the NVIDIA DLSS (Local) settings.*/" },
+#endif
 		{ "DisplayName", "Enable DLSS/DLAA to be turned on in Editor viewports" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables DLSS/DLAA in editor viewports. This project wide setting can be locally overridden in the NVIDIA DLSS (Local) settings." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableDLSSInPlayInEditorViewports_MetaData[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables DLSS/DLAA in play in editor viewports. This project wide setting can be locally overridden in in the NVIDIA DLSS (Local) settings.*/" },
+#endif
 		{ "DisplayName", "Enable DLSS/DLAA in Play In Editor viewports" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables DLSS/DLAA in play in editor viewports. This project wide setting can be locally overridden in in the NVIDIA DLSS (Local) settings." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShowDLSSSDebugOnScreenMessages_MetaData[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This enables on screen warnings and errors about DLSS/DLAA. This project wide setting can be locally overridden in the NVIDIA DLSS (Local) settings. */" },
+#endif
 		{ "DisplayName", "Show various DLSS/DLAA on screen debug messages" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This enables on screen warnings and errors about DLSS/DLAA. This project wide setting can be locally overridden in the NVIDIA DLSS (Local) settings." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GenericDLSSSRBinaryPath_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This is part of the DLSS plugin and used by most projects*/" },
+#endif
 		{ "DisplayName", "Generic DLSS-SR Binary Path" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is part of the DLSS plugin and used by most projects" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bGenericDLSSSRBinaryExists_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
@@ -534,10 +594,14 @@ struct Z_Construct_UClass_UDLSSSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomDLSSSRBinaryPath_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** In some cases NVIDIA might provide a project specific DLSS binary for your project. Please refer to https://developer.nvidia.com/dlss for details*/" },
+#endif
 		{ "DisplayName", "Custom DLSS-SR Binary Path" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "In some cases NVIDIA might provide a project specific DLSS binary for your project. Please refer to https://developer.nvidia.com/dlss for details" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCustomDLSSSRBinaryExists_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
@@ -546,45 +610,69 @@ struct Z_Construct_UClass_UDLSSSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLAAPreset_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLAA preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLAA Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLAA preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSQualityPreset_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS quality mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS Quality Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS quality mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSBalancedPreset_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS balanced mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS Balanced Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS balanced mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSPerformancePreset_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS performance mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS Performance Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS performance mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSUltraPerformancePreset_MetaData[] = {
 		{ "Category", "DLSS-SR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS ultra performance mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS Ultra Performance Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS ultra performance mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GenericDLSSRRBinaryPath_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This is part of the DLSS plugin and used by most projects*/" },
+#endif
 		{ "DisplayName", "Generic DLSS-RR Binary Path" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is part of the DLSS plugin and used by most projects" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bGenericDLSSRRBinaryExists_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
@@ -593,10 +681,14 @@ struct Z_Construct_UClass_UDLSSSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomDLSSRRBinaryPath_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** In some cases NVIDIA might provide a project specific DLSS binary for your project. Please refer to https://developer.nvidia.com/dlss for details*/" },
+#endif
 		{ "DisplayName", "Custom DLSS-RR Binary Path" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "In some cases NVIDIA might provide a project specific DLSS binary for your project. Please refer to https://developer.nvidia.com/dlss for details" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCustomDLSSRRBinaryExists_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
@@ -610,31 +702,47 @@ struct Z_Construct_UClass_UDLSSSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSRRQualityPreset_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS-RR quality mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS-RR Quality Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS-RR quality mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSRRBalancedPreset_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS-RR balanced mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS-RR Balanced Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS-RR balanced mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSRRPerformancePreset_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS-RR performance mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS-RR Performance Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS-RR performance mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DLSSRRUltraPerformancePreset_MetaData[] = {
 		{ "Category", "DLSS-RR Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** DLSS-RR ultra performance mode preset setting. Allows selecting a different DL model than the default */" },
+#endif
 		{ "DisplayName", "DLSS-RR Ultra Performance Preset" },
 		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DLSS-RR ultra performance mode preset setting. Allows selecting a different DL model than the default" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bAllowOTAUpdate_SetBit(void* Obj);
@@ -859,7 +967,7 @@ UDLSSSettings::~UDLSSSettings() {}
 // End Class UDLSSSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EDLSSSettingOverride_StaticEnum, TEXT("EDLSSSettingOverride"), &Z_Registration_Info_UEnum_EDLSSSettingOverride, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2279089454U) },
@@ -867,13 +975,13 @@ struct Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Public_DLS
 		{ EDLSSRRPreset_StaticEnum, TEXT("EDLSSRRPreset"), &Z_Registration_Info_UEnum_EDLSSRRPreset, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4293121250U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDLSSOverrideSettings, UDLSSOverrideSettings::StaticClass, TEXT("UDLSSOverrideSettings"), &Z_Registration_Info_UClass_UDLSSOverrideSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDLSSOverrideSettings), 2808499968U) },
-		{ Z_Construct_UClass_UDLSSSettings, UDLSSSettings::StaticClass, TEXT("UDLSSSettings"), &Z_Registration_Info_UClass_UDLSSSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDLSSSettings), 3297967797U) },
+		{ Z_Construct_UClass_UDLSSOverrideSettings, UDLSSOverrideSettings::StaticClass, TEXT("UDLSSOverrideSettings"), &Z_Registration_Info_UClass_UDLSSOverrideSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDLSSOverrideSettings), 3904533167U) },
+		{ Z_Construct_UClass_UDLSSSettings, UDLSSSettings::StaticClass, TEXT("UDLSSSettings"), &Z_Registration_Info_UClass_UDLSSSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDLSSSettings), 3309733862U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_3066845241(TEXT("/Script/DLSS"),
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_1025544899(TEXT("/Script/DLSS"),
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_Engine_BiggestOne3_0_Plugins_DLSS_Source_DLSS_Public_DLSSSettings_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
