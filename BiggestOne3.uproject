@@ -73,6 +73,11 @@
 			"Name": "XeSS",
 			"Enabled": false,
 			"MarketplaceURL": "https://www.fab.com/listings/8ab057da-982a-4e3b-8c56-ab56720d4641"
+		},
+		{
+			"Name": "Substance",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4"
 		}
 	],
 	"TargetPlatforms": [
