@@ -79,3 +79,4 @@ DerivedDataCache/*
 Content/StarterContent/
 Content/StarterContent/*
 Content/StarterContent/**
+Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset
